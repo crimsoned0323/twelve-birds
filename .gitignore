@@ -1,0 +1,35 @@
+# === 敏感文件（绝对不能上传）===
+zenmux-api-demo/.env
+*.env
+**/.env
+
+# === 本地工作数据 ===
+.workbuddy/
+.codebuddy/
+
+# === 安装包/二进制无关文件 ===
+*.exe
+*.msi
+*.dmg
+
+# === 日志和临时文件 ===
+*.log
+_pipeline_output/*.log
+_pipeline_output/*_err.log
+
+# === 系统文件 ===
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# === 编辑器 ===
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# === 缓存 ===
+__pycache__/
+*.pyc
+node_modules/

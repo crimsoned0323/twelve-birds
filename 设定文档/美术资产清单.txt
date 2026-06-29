@@ -1,0 +1,462 @@
+============================================================
+  十二飞鸟 · 美术 & 音频资产清单
+  CSV总量: 520文件 / 60天剧本 / 14结局
+============================================================
+
+【说明】
+- 临时命名规则: BG_场景名 / SP_角色名_表情 / CG_事件名
+- Prompt 统一风格: "Visual Novel background, 2025 Japan Osaka, high-end hostess club interior, dim warm lighting, cinematic composition, 16:9, anime style, detailed textures"
+- 所有角色立绘需中立表情+5-8种差分表情
+============================================================
+
+
+一、背景 CG（Backgrounds）
+============================================================
+
+BG_01  俱乐部外景_鹤羽小路
+        场景: 大阪鹤羽小路，"十二飞鸟"俱乐部外观，五层和风现代建筑，没有招牌
+        Prompt: "Visual novel background, 2025 Osaka Japan, deserted alleyway 'Tsuruha Lane', a five-story modern Japanese building without signage at the end, twilight purple and gold sky, streetlamps not yet lit, cinematic wide shot, anime style, moody atmosphere"
+
+BG_02  俱乐部门口_玄关
+        场景: 俱乐部玄关，深色石材地面，两侧墙挂十二幅浮世绘鸟图
+        Prompt: "Visual novel background, interior of high-end Japanese club entrance, dark polished stone floor reflecting light, walls lined with twelve ukiyo-e bird paintings, dim warm lamplight, elegant atmosphere, anime style"
+
+BG_03  俱乐部走廊
+        场景: 木质走廊，壁灯暖黄色，两侧房间门紧闭
+        Prompt: "Visual novel background, long wooden corridor in Japanese hostess club, warm amber wall sconces, closed doors on both sides, red leather furniture visible through door frames, quiet elegant mood, anime style"
+
+BG_04  经理办公室
+        场景: 西式办公桌，墙上有《维纳斯的诞生》浮世绘改编版，角落有破碎人偶神龛
+        Prompt: "Visual novel background, club manager office, western wooden desk with reservation ledger, parody painting of Birth of Venus on wall, broken ceramic doll shrine in corner, warm desk lamp, night view through window, anime style"
+
+BG_05  休息室
+        场景: 女孩们的休息区，化妆镜，沙发，衣柜。后期有紫的紫色布帘占卜角
+        Prompt: "Visual novel background, dressing room lounge of hostess club, vanity mirrors with warm bulb lights around them, lockers, sofa, purple curtain draped in corner creating small fortune-telling nook, cluttered but cozy, anime style"
+
+BG_06  化妆间
+        场景: 女孩们化妆的区域，镜前灯，粉底和香水的气味
+        Prompt: "Visual novel background, club dressing room, multiple vanity stations with bright mirror lights, makeup scattered on counters, costumes hanging on racks, slightly messy, warm lighting, anime style"
+
+BG_07  茶室
+        场景: 雪代的私人茶室，榻榻米，矮桌，铜镜。台风夜蜡烛场景
+        Prompt: "Visual novel background, traditional Japanese tea room with tatami mats, low wooden table, bronze mirror on wall, paper lantern, candle-lit during storm, quiet and serene, anime style"
+
+BG_08  白鹤姬房间
+        场景: 雪代的私人房间，桐木衣柜，黑釉浴缸，Day 2浴室场景
+        Prompt: "Visual novel background, Japanese hostess club private room, paulownia wood wardrobe, black ceramic bathtub with steam, low table with flower petals, sensual warm amber lighting, anime style"
+
+BG_09  大厅/宴会厅
+        场景: 俱乐部主厅，三角钢琴，吧台，VIP卡座，长桌(Day 60晚宴)
+        Prompt: "Visual novel background, grand hall of hostess club, grand piano in corner, long banquet table with white tablecloth, crystal chandelier, bar counter with glass shelves, VIP booth sofas, elegant and luxurious, anime style"
+
+BG_10  天台
+        场景: 俱乐部的天台，可以看到大阪天际线，夕烧和夜景
+        Prompt: "Visual novel background, rooftop of building in Osaka, city skyline at dusk with orange to purple gradient sky, streetlights beginning to glow along river, old rattan chair, anime style"
+
+BG_11  后巷
+        场景: 俱乐部后巷，垃圾桶，自动贩卖机，消防梯，生锈的下水道盖子
+        Prompt: "Visual novel background, back alley in Osaka at night, vending machine glowing, metal fire escape ladder, trash bins, damp asphalt reflecting dim streetlight, gritty urban Japan, anime style"
+
+BG_12  储物间
+        场景: 旧椅套、清洁剂、啤酒箱。育子的"安全屋"
+        Prompt: "Visual novel background, storage room of club, stacks of old chair covers and tablecloths, cleaning supplies, cardboard boxes of beer, single warm lightbulb, cramped but clean, anime style"
+
+BG_13  厨房后间
+        场景: 景子和黑羽密谈的地方，消毒水和漂白水气味
+        Prompt: "Visual novel background, back kitchen area of club, metal shelves with dishes, mop and bucket, small window, harsh fluorescent light, bleach smell implied, anime style"
+
+BG_14  地下车库入口
+        场景: Day 60双雀盗窃门禁卡的场景
+        Prompt: "Visual novel background, underground parking entrance of Japanese building, dim concrete walls, yellow painted lines, security card reader, cool fluorescent lighting, anime style"
+
+BG_15  VIP室
+        场景: 高级VIP包厢，皮沙发，茶几。黑田晚宴前夜与景子的对话处
+        Prompt: "Visual novel background, luxury VIP room in hostess club, leather sofas, low glass table with drinks, soft warm lighting, expensive decor, anime style"
+
+
+BG_16  黑羽的公寓_室内
+        场景: 淀川区六叠和室，榻榻米发霉，壁纸剥落，没有床垫(初期)
+        Prompt: "Visual novel background, tiny 6-tatami Japanese apartment interior, old stained tatami mats, peeling wallpaper, single dim lamp, messy with papers and evidence files, claustrophobic, night time, anime style"
+
+BG_17  拉面店「滨之灯」
+        场景: Day 1与增田接头处，Day 8增田死亡地点，Day 33再访
+        Prompt: "Visual novel background, small ramen shop 'Hama no Hi' interior at night, wooden counter, steam rising from pots, paper lantern, old TV in corner, only two customers, warm and nostalgic, anime style"
+
+BG_18  大阪市立综合医院_肿瘤科
+        场景: 南梨男友的化疗病房走廊。日光灯闪烁，长椅，玻璃窗
+        Prompt: "Visual novel background, Japanese hospital corridor, oncology ward, flickering fluorescent light, plastic chairs along wall, glass window into patient room, sterile and cold atmosphere, anime style"
+
+BG_19  心斋桥商店街
+        场景: Day 4寝具店所在的繁华商业街，Day 18景子帮黑羽选西装
+        Prompt: "Visual novel background, Shinsaibashi shopping arcade in Osaka, busy covered street with clothing stores and bedding shop, bright daylight, crowd of shoppers, warm summer atmosphere, anime style"
+
+BG_20  寝具店内部
+        场景: Day 4偶遇景子和小澪的地方，床垫摞到天花板
+        Prompt: "Visual novel background, bedding store interior, mattresses and pillows stacked to ceiling, narrow aisles, soft warm lighting, slightly cluttered, anime style"
+
+BG_21  银鹮姬专属房间
+        场景: 金融女王的私人空间，茉莉香，支票簿，红茶
+        Prompt: "Visual novel background, private room in club, elegant with silver accents, tea set on low table, checkbook, jasmine scent implied, afternoon sunlight through blinds, feminine and refined, anime style"
+
+BG_22  SM专属区域/夜鸢姬房间
+        场景: 蔷薇的领域，皮革气味，黑皮书，落地灯最暗档
+        Prompt: "Visual novel background, private BDSM room in club, black leather furniture, dim floor lamp, bookshelf filled with black notebooks, red velvet drapes, dark and sensual atmosphere, anime style"
+
+BG_23  银鹮姬投行办公室/Day 60转账网咖
+        场景: 丽莎操作Phoenix Coin转账的地点。2025年日式网咖或共享办公室
+        Prompt: "Visual novel background, modern Japanese net cafe or shared office space, computer screens showing financial data, neon blue glow, night time, slightly messy desk with coffee, urban tech atmosphere, anime style"
+
+BG_24  Interpol安全屋
+        场景: Linda在大阪市区的临时部署点，加密电脑，枪械
+        Prompt: "Visual novel background, small apartment used as Interpol safe house, laptop with encrypted interface, handgun on table, curtains drawn, dim tactical atmosphere, anime style"
+
+BG_25  关西机场_到达大厅
+        场景: 莉香结局。接机口，航班信息屏
+        Prompt: "Visual novel background, Kansai International Airport arrivals hall, flight information display showing QF87, afternoon light through glass walls, crowd of people with signs, bright and modern, anime style"
+
+BG_26  奈良女子学院附属中学_校门
+        场景: 小澪的寄宿学校。景子在门口站着
+        Prompt: "Visual novel background, private girls' school gate in Nara, red brick buildings visible through trees, cherry blossoms or autumn leaves, peaceful afternoon, anime style"
+
+BG_27  雪代公寓_出狱后茶室(结局用)
+        场景: 俱乐部旧址改造成的书店二楼，茶室还在
+        Prompt: "Visual novel background, former club turned bookstore, second floor tea room preserved, wooden shelves with books, low table with barley tea set, window showing Osaka skyline, warm golden afternoon light, nostalgic, anime style"
+
+BG_28  神户海边公寓(结局用)
+        场景: 彩和瞳租的公寓，能看见海
+        Prompt: "Visual novel background, small apartment in Kobe with ocean view from window, simple furniture, cat sleeping on cushion, warm afternoon light reflecting off sea, peaceful, anime style"
+
+BG_29  函馆雪景(结局用)
+        场景: 紫旅行占卜的终点
+        Prompt: "Visual novel background, Hakodate in winter, snow-covered street, old tram passing by, cold blue-grey sky, nostalgic atmosphere, anime style"
+
+BG_30  莫斯科雪地(结局用)
+        场景: Linda带黑羽见她弟弟的照片处
+        Prompt: "Visual novel background, Moscow winter, snow-covered birch forest, grey sky, distant city skyline, cold and quiet, anime style"
+
+BG_31  博多拉面店(结局用)
+        场景: 丽莎开的拉面店，猪骨汤蒸汽
+        Prompt: "Visual novel background, small ramen shop in Hakata, counter seating, pork bone broth steam rising, warm yellow lighting, slightly run-down but cozy, anime style"
+
+BG_32  伦敦旧书店(结局用)
+        场景: 蔷薇的书店
+        Prompt: "Visual novel background, old bookstore in London, wooden shelves filled with rare books, warm lamp on counter, rain outside window, cozy intellectual atmosphere, anime style"
+
+BG_33  北海道小镇_渔港(闪回/结局)
+        场景: 黑羽和莉香的故乡，铁灰色冬天的海
+        Prompt: "Visual novel background, small fishing port in Hokkaido, iron-grey winter sea, wooden pier, distant mountains with snow, small boats moored, nostalgic and melancholic, anime style"
+
+BG_34  舞台/排练室
+        场景: 大厅三角钢琴旁的表演区；二楼旧排练室
+        Prompt: "Visual novel background, small rehearsal room on second floor, old upright piano, sheet music scattered, single practice light, dusty atmosphere, anime style"
+
+
+============================================================
+二、角色立绘（Character Sprites）
+============================================================
+表情集: neutral(默认)/happy/sad/angry/surprised/serious/flustered/smiling
+
+SP_01  黑羽哲也（主角·第一人称不常显示立绘）
+        外貌: 29岁男性，深色短发，疲惫但端正的面容。前期穿灰色旧西装，后期穿景子帮他选的深蓝色西装
+        Prompt: "Visual novel character sprite, male protagonist age 29, Japanese, short dark hair slightly unkempt, tired but handsome face, wearing worn grey suit, neutral expression, full body standing pose, anime style, transparent background"
+
+SP_02  白鹤姬·桂原雪代
+        外貌: 冷艳美人，浅灰色眼睛像薄冰裹住的琥珀，长发盘起戴白色羽毛发饰。前期穿月白色和服，Day 60穿白无垢改制和服，后期便装深蓝色
+        Prompt: "Visual novel character sprite, Japanese hostess club madam, elegant cold beauty, long black hair in updo with white feather ornament, light grey piercing eyes, wearing white furisode kimono with silver crane embroidery, neutral cold expression, full body, anime style, transparent background"
+
+SP_03  早莺姬·小野南梨
+        外貌: 20岁出头，栗色卷发高马尾，淡蓝色发尾挑染。私下穿涉谷休闲风(棒球帽、破洞牛仔裤)，手臂偶有淤青
+        Prompt: "Visual novel character sprite, young Japanese hostess, chestnut wavy hair in high ponytail with electric blue tips, wearing casual Shibuya street style with baseball cap, slightly bruised arm visible, gentle sad eyes, full body, anime style, transparent background"
+
+SP_04  巢燕姬·谷川景子
+        外貌: 30多岁单亲母亲，棕色卷发，温柔的蓝色眼睛，眼角细纹。俱乐部穿蓝白晚礼服，私下穿米色开衫+深蓝长裙
+        Prompt: "Visual novel character sprite, Japanese single mother in her 30s, brown wavy hair, gentle blue eyes with faint crow's feet, wearing blue-white evening gown in club, warm maternal expression, full body, anime style, transparent background"
+
+SP_05  青鹭姬·星野葵
+        外貌: 医学院学生，黑框眼镜(偶尔戴)，深色短发，指甲修得很短很干净。穿简单的白色衬衫+深色长裤。口袋里有消毒湿巾
+        Prompt: "Visual novel character sprite, Japanese medical student, short dark hair, black-framed glasses, clean short nails, wearing plain white blouse and dark trousers, holding disinfectant wipes, cold analytical expression, full body, anime style, transparent background"
+
+SP_06  黄鹂姬·日向夏实
+        外貌: 前地下偶像，粉色双马尾，金色眼睛，标准偶像笑容。演出服是亮闪闪的蓬蓬裙。私下膝盖贴卡通创可贴
+        Prompt: "Visual novel character sprite, former underground idol, twin pink pigtails, golden eyes, wearing sparkly idol costume with puffy skirt, perfect idol smile, band-aids on knees visible underneath, full body, anime style, transparent background"
+
+SP_07  神鸦姬·神乐坂紫
+        外貌: 涩谷系辣妹，挑染的彩色头发，夸张睫毛和闪亮唇彩，超短裙+厚底靴。手里常拿着塔罗牌(深紫色星空牌背)。耳环是鸟笼形状里面没有鸟
+        Prompt: "Visual novel character sprite, Shibuya gyaru girl, colorful streaked hair, dramatic lashes, glittery lip gloss, wearing mini skirt and platform boots, holding tarot deck with starry purple back, birdcage earrings, cheerful expression, full body, anime style, transparent background"
+
+SP_08  朱雀姬·Linda
+        外貌: 俄罗斯混血，金色长发，浅褐色眼睛(接近琥珀色)，白皙皮肤。穿黑色吊带裙，手指夹着细长薄荷烟
+        Prompt: "Visual novel character sprite, half-Russian half-Japanese woman, long golden blonde hair, light brown eyes, pale skin, wearing black slip dress, holding slim menthol cigarette, confident smirk, full body, anime style, transparent background"
+
+SP_09  夜鸢姬·美咲蔷薇
+        外貌: 30岁左右，深紫色长发，黑色皮革紧身衣外披酒红色丝绒长袍。手里有黑色皮革封面的笔记本。指甲涂深紫色接近黑色
+        Prompt: "Visual novel character sprite, dominatrix hostess, long dark purple hair, wearing black leather bodysuit under burgundy velvet robe, holding black leather notebook, dark purple almost black nails, sharp assessing gaze, full body, anime style, transparent background"
+
+SP_10  双雀姬·濑户彩(姐)
+        外貌: 鹅蛋脸，细长的眼睛，明黄色演出服。眼神更亮更兴奋，高马尾
+        Prompt: "Visual novel character sprite, acrobat twin sister, oval face, narrow eyes, bright yellow performance leotard, high ponytail, bright excited eyes, confident smile, full body dynamic pose, anime style, transparent background"
+
+SP_11  双雀姬·濑户瞳(妹)
+        外貌: 和彩完全一样但眼神暗淡很多，同款明黄色演出服。通常站在彩身后半步，赤脚
+        Prompt: "Visual novel character sprite, acrobat twin sister, identical to彩 but with dim introverted eyes, same yellow leotard, usually standing slightly behind sister, barefoot, quiet hesitant expression, full body, anime style, transparent background"
+
+SP_12  雏鹃姬·芦田育子
+        外貌: 16岁少女，黑色短发，刘海压得很低。脚尖内八，说话低头。前期穿深色水手服/旧家居服，后期穿自己买的深蓝色连衣裙+米白色羽绒服。袖口有木扣
+        Prompt: "Visual novel character sprite, 16-year-old Japanese girl, short black hair with heavy bangs covering eyes, wearing dark school sailor uniform, feet turned inward shyly, wooden buttons on cuffs, timid expression, small frame, full body, anime style, transparent background"
+
+SP_13  银鹮姬·神宫寺丽莎
+        外貌: 前投行女公关，银色晚礼服，琥珀色眼眸，精致妆容。穿高级定制服装。指甲银灰色带闪粉
+        Prompt: "Visual novel character sprite, former investment bank hostess, silver evening gown, amber eyes, silver-grey glitter nails, elegant sophisticated expression, full body, anime style, transparent background"
+
+SP_14  诡鹀姬·木岛春奈
+        外貌: 二十三四岁，大眼睛，小虎牙。红色长发，狐狸元素装饰(发卡、耳坠)。素颜是普通白皙的脸(从不示人)。携带仿妆面具箱
+        Prompt: "Visual novel character sprite, young mischievous woman, red long hair, big eyes with small fang tooth, fox-shaped hair clip and earrings, holding makeup case with disguise masks, playful smirk, full body, anime style, transparent background"
+
+SP_15  小林莉香
+        外貌: 黑羽的女友，24岁左右，浅蓝色针织衫，长发松散扎在脑后。在澳洲留学，皮肤被晒成健康的小麦色
+        Prompt: "Visual novel character sprite, young Japanese woman in Australia, long hair loosely tied back, wearing light blue knit sweater, healthy sun-kissed skin, bright cheerful smile, holding smartphone, full body, anime style, transparent background"
+
+SP_16  增田一郎
+        外貌: 中年男性缉毒警察，黑发夹杂灰色，方颌，目光锐利。穿棕色西装外套+红色领带
+        Prompt: "Visual novel character sprite, middle-aged Japanese detective, grey-streaked black hair, square jaw, sharp eyes, wearing brown suit jacket with red tie, serious expression, full body, anime style, transparent background"
+
+SP_17  佐藤正义
+        外貌: 30多岁刑警，黑短发，偏瘦，黑眼圈，总是咬烟嘴。穿旧大衣
+        Prompt: "Visual novel character sprite, Japanese detective in 30s, short black hair, thin build, dark circles under eyes, cigarette in mouth, wearing worn trench coat, anxious tired expression, full body, anime style, transparent background"
+
+SP_18  村上道也
+        外貌: 50多岁警部，头发灰白整齐，眼睛不大但眼神很稳。深灰西装无品牌标识
+        Prompt: "Visual novel character sprite, Japanese senior police inspector, 50s, neatly combed grey-white hair, small steady eyes, wearing expensive dark grey suit without brand label, calm intimidating expression, full body, anime style, transparent background"
+
+SP_19  使者·森山
+        外貌: 50岁男性，个子不高但很宽，骨头粗大。深灰风衣，眼白多，看人像数骨头
+        Prompt: "Visual novel character sprite, Japanese yakuza enforcer, 50s, short but broad build with thick bones, dark grey trench coat, small eyes with lots of white, cold evaluating gaze, full body, anime style, transparent background"
+
+SP_20  黑田光成
+        外貌: 50多岁府议员，深色西装袖口磨亮，向后梳的发型。左手指间常夹着没点的烟
+        Prompt: "Visual novel character sprite, Japanese prefectural assembly member, 50s, slicked-back hair, expensive dark suit with slightly worn cuffs, holding unlit cigarette between fingers, smug smile, full body, anime style, transparent background"
+
+SP_21  江口裕二
+        外貌: 40岁周刊记者，深蓝夹克配白衬衫不系领带，头发略长。携带纸质笔记本
+        Prompt: "Visual novel character sprite, Japanese weekly magazine journalist, 40s, slightly long unkempt hair, dark blue jacket over white shirt no tie, carrying notebook, observant eyes, standing casually, anime style, transparent background"
+
+SP_22  拉面店老板
+        外貌: 50多岁男性，粗壮身材，手臂有褪色的浪花纹身。白围裙
+        Prompt: "Visual novel character sprite, Japanese ramen shop owner, 50s, stocky build, faded wave tattoo on forearm, white apron, warm welcoming smile, full body, anime style, transparent background"
+
+SP_23  小澪_14岁
+        外貌: 14岁少女，穿着校服或休闲装，马尾辫，和母亲一样有蓝色眼睛。个子几乎和妈妈一样高
+        Prompt: "Visual novel character sprite, 14-year-old Japanese schoolgirl, ponytail, wearing school uniform, blue eyes like her mother, nearly as tall as adult, earnest expression, full body, anime style, transparent background"
+
+SP_24  紫的乌鸦
+        外貌: 黑色乌鸦，羽毛表面泛蓝光。蹲在笼子里或紫的肩上
+        Prompt: "Visual novel asset, pet crow, black feathers with subtle blue iridescence, intelligent eyes, sitting in cage or on character's shoulder, anime style, transparent background"
+
+
+============================================================
+三、事件CG（Key Scene Illustrations）
+============================================================
+全彩插画，16:9比例
+
+CG_01  第一天·第一次对视
+        场景: Day 1/2。雪代站在俱乐部门口，背光，浅色眼睛看向黑羽。"你有一双太干净的眼睛"
+        出场角色: 雪代(正脸)，黑羽(背影/侧影)
+        Prompt: "Visual novel CG illustration, key scene, elegant Japanese woman in white kimono standing in club doorway, backlit by warm golden light, looking down at viewer with piercing pale grey eyes, atmospheric, dramatic lighting, anime art style"
+
+CG_02  浴室测试
+        场景: Day 2。雪代在浴缸中，水面刚好在锁骨下方，蒸汽氤氲，花瓣漂浮。黑羽的手悬在半空——停住了
+        出场角色: 雪代(浴缸中)，黑羽(手部特写)
+        Prompt: "Visual novel CG, Japanese beauty in black ceramic bathtub, steam rising, white flower petals floating on milky water surface, man's hand hovering just above the water, tense charged atmosphere, sensual but elegant, anime art style"
+
+CG_03  增田的最后一面
+        场景: Day 8。拉面店。增田的座位空着，上面放着半杯没兑水的烧酒。黑羽站在桌前
+        出场角色: 黑羽(背影)，空座位+烧酒杯
+        Prompt: "Visual novel CG, empty seat at ramen counter with half-filled shochu glass, lone man standing before it with back to viewer, morning light through window, breakfast news playing on old TV, melancholic atmosphere, anime art style"
+
+CG_04  蝴蝶结
+        场景: Day 3。凌晨走廊，南梨抱着浅蓝色的内衣跑向更衣室，回头看黑羽。灯光昏黄
+        出场角色: 南梨(狂奔中回头)，黑羽(远景)
+        Prompt: "Visual novel CG, young woman in lingerie running down dim corridor of club, glancing back over shoulder with tear-streaked face, clutching light blue underwear to chest, warm amber emergency lighting, desperate urgency, anime art style"
+
+CG_05  小澪的生日照
+        场景: Day 13。过塑的照片特写：小澪在餐桌前，巧克力蛋糕上插着数字蜡烛"14"，旁边放着写着"妈妈"的手写卡片
+        出场角色: 小澪(照片中)，手写卡片
+        Prompt: "Visual novel CG, close-up of laminated photo showing 14-year-old girl at dining table with chocolate birthday cake, '14' candles, handwritten card reading 'Mama' visible, warm home lighting, sentimental, anime art style"
+
+CG_06  真正的账簿
+        场景: Day 20。雪代办公室深夜。她翻开酒红色皮革账簿推给黑羽。台灯只照亮桌面。烟蒂在烟灰缸里
+        出场角色: 雪代(半脸在光里半脸在阴影里)，黑羽(对面)
+        Prompt: "Visual novel CG, intense confrontation in dim office, elegant woman pushing wine-red leather ledger across desk, half her face illuminated by single desk lamp, three cigarette butts in ashtray, charged silence, cinematic anime art style"
+
+CG_07  黄鹂的旧照片
+        场景: Day 22。夏实在休息室打开铁皮饼干盒，里面是Solar Flare时期的照片。窗外结霜
+        出场角色: 夏实(捧着旧照片)，黑羽(在旁边看)
+        Prompt: "Visual novel CG, former idol sitting on sofa opening old tin cookie box, faded photos of girl group 'Solar Flare' scattered, frost on window behind her, she's smiling but eyes are sad, nostalgic, anime art style"
+
+CG_08  台风夜蜡烛
+        场景: Day 38。茶室停电，雪代和黑羽隔着一支蜡烛对坐。她的影子在墙上很大。窗外闪电
+        出场角色: 雪代，黑羽，蜡烛
+        Prompt: "Visual novel CG, two figures sitting across low table in traditional tea room during typhoon, single candle between them casting giant shadows on wall, lightning flash through window, rain streaking glass, intense intimate atmosphere, anime art style"
+
+CG_09  育子的告白
+        场景: Day 38。台风眼中。育子房间，手电筒放在地上，蜡烛。育子坐在被子上，手电筒的光打在天花板上。她说"我想给你"
+        出场角色: 育子(正面)，黑羽(侧面坐着)
+        Prompt: "Visual novel CG, 16-year-old girl sitting on futon in small room during typhoon eye, flashlight pointing at ceiling, candle flickering, her face full in warm light, saying something weighty with tears welling, intimate vulnerable moment, anime art style"
+
+CG_10  十二杯茶
+        场景: Day 58。休息室。托盘上放十二个青瓷茶杯，八杯空四杯凉。雪代站在旁边。女孩们围坐
+        出场角色: 雪代，育子、紫、夏实、彩、瞳、景子、春奈围着茶几。四杯没动的茶代表缺席的人
+        Prompt: "Visual novel CG, group scene in club lounge, tray with twelve celadon teacups - eight empty four still full, women sitting around low table in silence, afternoon light streaming through window, the madam standing to one side, bittersweet calm before storm, anime art style"
+
+CG_11  极乐之夜_长桌
+        场景: Day 60。十二飞鸟站在长桌一侧，村上、毒枭、森山坐在对面。吊灯最亮。桌布雪白
+        出场角色: 全员(12飞鸟+黑羽+雪代 vs 村上+毒枭+森山+黑田)
+        Prompt: "Visual novel CG, epic confrontation scene, long banquet table with white cloth, twelve women in elegant dresses standing on one side, dark-suited men on other side, crystal chandelier at full brightness, champagne tower center, dramatic tension, anime art style, cinematic composition"
+
+CG_12  两枪
+        场景: Day 60。雪代转身开枪——两发连射。枪口火焰照亮她碎掉的面具。身后黑羽跪地捂肩
+        出场角色: 雪代(转身射击)，心腹(倒地)，黑羽(背景跪地)
+        Prompt: "Visual novel CG, dramatic action scene, woman in white kimono spinning around and firing handgun, muzzle flash illuminating her face as tears stream down, man falling behind her, another man clutching wounded shoulder in background, smoke and chaos, intense anime art style"
+
+CG_13  弃座
+        场景: Day 60。雪代把勃朗宁手枪扔在地毯上。跌坐在沙发里。眼泪终于下来。"我根本，下不去手啊"
+        出场角色: 雪代(沙发上崩溃)，手枪+钥匙在地上
+        Prompt: "Visual novel CG, woman in white kimono collapsed on sofa, pistol lying on carpet beside fallen brass key, tears streaming down her face as she finally breaks, banquet hall in disarray behind her, emotional climax, anime art style"
+
+CG_14  上车前
+        场景: Day 60 终幕。晨光中，雪代戴着手铐站在警车前，回头对黑羽笑。"那一枪——很疼吧""谢谢你，打偏了"
+        出场角色: 雪代(手铐+笑)，黑羽(肩膀包扎)，背景晨光+警车
+        Prompt: "Visual novel CG, woman in handcuffs standing beside police car in morning light, turning back to smile genuinely for first time at man with bandaged shoulder, dawn breaking over Osaka skyline, bittersweet ending, anime art style, cinematic lighting"
+
+CG_15  晚宴前夜_天台
+        场景: Day 59。雪代和黑羽站在天台上，暮色从橙色渐变到深紫。街灯一盏一盏亮起来。她说"那个位置——光线好"
+        出场角色: 雪代(侧面)，黑羽(侧面)，背景大阪夜景
+        Prompt: "Visual novel CG, two figures standing on rooftop at dusk, silhouetted against orange-to-purple Osaka skyline, streetlights beginning to glow along river, quiet intimate moment before the storm, anime art style"
+
+
+============================================================
+四、关键道具/物品（Props）
+============================================================
+
+PR_01  黄铜茶室钥匙(红绳)
+        场景: Day 13雪代给黑羽; Day 40口袋; Day 60落在地上
+        Prompt: "Visual novel prop, old brass key tied with faded red string, simple elegant, isolated on surface, soft lighting, anime style"
+
+PR_02  黑色翻盖机
+        场景: 黑羽的加密通讯工具，增田留下的
+        Prompt: "Visual novel prop, old Japanese flip phone black matte, small scratch on metal casing, isolated, anime style"
+
+PR_03  凤凰卡
+        场景: Day 3银鹮展示; Day 21黑羽从雪代抽屉找到
+        Prompt: "Visual novel prop, dark red plastic card with minimalist phoenix logo in gold emboss, magnetic strip, mysterious, anime style"
+
+PR_04  黑皮书
+        场景: 夜鸢蔷薇的情报记录本，黑色皮革封面磨出原色。内有密密麻麻的密码笔记
+        Prompt: "Visual novel prop, black leather notebook with worn cover showing base material, pages filled with coded notes and red underlines, mysterious, anime style"
+
+PR_05  酒红色账簿
+        场景: 雪代的真实账簿，比黑皮书更旧，边角磨出纸板
+        Prompt: "Visual novel prop, wine-red leather-bound ledger book, old with worn corners exposing cardboard, filled with handwritten numbers and codes, anime style"
+
+PR_06  婴儿蓝色内衣+蝴蝶结
+        场景: Day 3南梨遗失的私人物品，男友送的。浅蓝色蕾丝，肩带有丝绸蝴蝶结
+        Prompt: "Visual novel prop, light blue lace lingerie with small silk ribbon bow on strap, delicate and youthful, soft lighting, anime style"
+
+PR_07  勃朗宁手枪
+        场景: 雪代的配枪，跟了她十一年。黑色，有磨损
+        Prompt: "Visual novel prop, black Browning pistol with worn grip, slightly oiled, lying on surface, cold and dangerous, anime style"
+
+PR_08  大麦茶茶杯(青瓷)
+        场景: Day 58十二杯茶。青瓷杯底有细裂纹
+        Prompt: "Visual novel prop, twelve celadon teacups on wooden tray, some empty some full of barley tea, delicate crack lines on cup bottoms, warm atmosphere, anime style"
+
+PR_09  铁皮饼干盒(圣诞图案)
+        场景: 夏实存放Solar Flare旧照片的盒子。盖子上印着圣诞老人
+        Prompt: "Visual novel prop, old tin biscuit box with faded Santa Claus Christmas print, edges worn to silver metal, containing old photos, nostalgic, anime style"
+
+PR_10  围巾(灰色)
+        场景: 南梨织给男友/黑羽的围巾。针脚不齐，颜色从灰过渡到深灰
+        Prompt: "Visual novel prop, hand-knitted grey scarf with uneven stitches, transitioning from light to dark grey, slightly curled edges, warm texture, anime style"
+
+PR_11  铜纽扣(樱花纹)
+        场景: 景子从小澪生父拿到的警服纽扣，背面刻"H.T"
+        Prompt: "Visual novel prop, copper uniform button with cherry blossom engraving, worn, 'H.T' initials on back, small and heavy, anime style"
+
+PR_12  座位卡"黑羽哲也"
+        场景: Day 59育子手写。背面铅笔写"ありがとう"
+        Prompt: "Visual novel prop, white place card with handwritten name 'Tetsuya Kuroha' in careful childlike writing, 'Arigatou' in pencil on back, simple, anime style"
+
+PR_13  鸟窝(空的)
+        场景: Day 40庭院清理时育子发现。草编精致
+        Prompt: "Visual novel prop, small empty bird nest woven from grass and twigs, delicate, resting on tree branch, anime style"
+
+PR_14  塔罗牌_愚者正位
+        场景: Day 1紫给黑羽抽的第一张牌。年轻人站悬崖边，白玫瑰，小白狗
+        Prompt: "Visual novel prop, tarot card The Fool upright, young man in colorful clothes at cliff edge holding white rose with small dog, starry purple card back visible beside it, anime style"
+
+PR_15  塔罗牌_空白/死神沉默之塔
+        场景: Day 33神秘牌。女人侧脸闭眼，白线从头顶到心脏。标注"Thanatos"
+        Prompt: "Visual novel prop, mysterious tarot card not from standard deck, woman's profile with closed eyes, white line from crown to heart, Greek letters 'Thanatos', pure black card back with Φ symbol, ominous, anime style"
+
+PR_16  雪鹤姬录音带
+        场景: Day 60青鹭从二楼丢下。迷你磁带，标签"雪鹤姬之死·完整录音"
+        Prompt: "Visual novel prop, mini audio cassette tape with handwritten label 'Yukitsuru Hime - Complete Recording', slightly aged, anime style"
+
+PR_17  Solar Flare合同
+        场景: 森山签名。三个失踪女孩
+        Prompt: "Visual novel prop, old talent agency contract with signatures and red seals, yellowed paper, official stamp, ominous, anime style"
+
+PR_18  白无垢(和服)
+        场景: 雪代Day 60穿。白色，拆掉红色衬里换成灰色
+        Prompt: "Visual novel prop, white Japanese bridal kimono 'shiromuku', modified with grey lining instead of red, spread out, elegant and wedding-like but cold, anime style"
+
+PR_19  寄宿学校宣传单
+        场景: Day 40景子手里捏着。红砖教学楼照片，彩色印刷
+        Prompt: "Visual novel prop, glossy school brochure showing red brick campus building, 'Full Boarding System' text highlighted, slightly crumpled from handling, anime style"
+
+PR_20  骷髅黑卡(议员用)
+        场景: Day 15黑田进入俱乐部时出示的
+        Prompt: "Visual novel prop, black VIP card with gold-bordered edges and subtle skull pattern, exclusive and ominous, anime style"
+
+
+============================================================
+五、BGM / 音效（Audio）
+============================================================
+
+BGM_01  主题曲_钢琴独奏 "十二飞鸟"
+BGM_02  俱乐部日常 "琥珀色的灯光" (柔和爵士，萨克斯+钢琴)
+BGM_03  雪代的主题 "白鹤的独白" (缓慢，尺八+钢琴，冷冽)
+BGM_04  悬疑/调查 "账簿" (低音弦乐重复段，时钟滴答)
+BGM_05  危机逼近 "村上的影子" (电子低频+太鼓渐强)
+BGM_06  温馨/日常 "育子的抹布" (轻快木管，温暖的)
+BGM_07  南梨的主题 "围巾" (吉他独奏，忧郁)
+BGM_08  感伤/回忆 "雪鹤姬" (钢琴+小提琴，空灵回声)
+BGM_09  Day 38台风夜 "烛火" (单音符钢琴+环境雨声)
+BGM_10  Day 60准备 "十二杯茶" (缓慢弦乐合奏，仪式感)
+BGM_11  Day 60对决 "极乐之夜" (太鼓+电子节拍+弦乐渐强)
+BGM_12  Day 60两枪后 "弃座" (钢琴独奏，极缓慢，停顿之间有空)
+BGM_13  结局/尾声 "飞" (管弦乐合奏，向上渐强，明亮但带一点遗憾)
+BGM_14  紫的占卜 "鼠尾草与星光" (清脆铃音+钢片琴，神秘的)
+BGM_15  黄鹂出道曲 "暗改成光" (J-Pop女声独唱，钢琴伴奏版本)
+BGM_16  Bad End "仓库的扫描枪" (电子低鸣，重复机械音)
+BGM_17  标题画面 "鹤羽小路" (钢琴独奏，主题曲变奏)
+BGM_18  后巷 "贩卖机的嗡鸣" (氛围电子，远处车声)
+
+SFX_01  木屐脚步声(雪代)
+SFX_02  高跟鞋脚步声(俱乐部女孩)
+SFX_03  门铃/风铃
+SFX_04  翻盖机震动
+SFX_05  翻盖机合上
+SFX_06  智能手机LINE消息提示音
+SFX_07  拉面啜饮声
+SFX_08  倒酒/酒杯碰撞
+SFX_09  枪声(两发连射)
+SFX_10  暴雨+雷鸣
+SFX_11  台风风声
+SFX_12  蜡烛芯爆裂
+SFX_13  乌鸦叫声
+SFX_14  塔罗牌洗牌声
+SFX_15  打字机/键盘
+SFX_16  自动贩卖机出货声
+SFX_17  警笛(远/近)
+SFX_18  心跳声(紧张时刻)

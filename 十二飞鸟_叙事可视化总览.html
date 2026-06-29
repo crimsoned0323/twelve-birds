@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>十二飞鸟 · 叙事可视化总览</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f8f7f5;color:#2C2C2A;line-height:1.7;padding:20px}
+  .container{max-width:900px;margin:0 auto;background:#fff;border-radius:16px;padding:48px 56px;box-shadow:0 1px 4px rgba(0,0,0,0.06)}
+  h1{font-size:24px;font-weight:600;margin-bottom:8px;letter-spacing:-0.3px}
+  .subtitle{font-size:14px;color:#5F5E5A;margin-bottom:40px}
+  h2{font-size:18px;font-weight:600;margin:40px 0 16px;padding-bottom:8px;border-bottom:1px solid #E8E6E0}
+  h3{font-size:15px;font-weight:600;margin:28px 0 12px}
+  p{font-size:14px;color:#444;margin-bottom:12px}
+  .chart-box{background:#fafaf8;border:1px solid #E8E6E0;border-radius:12px;padding:24px;margin:20px 0;overflow-x:auto}
+  .chart-box svg{display:block;margin:0 auto;max-width:100%;height:auto}
+  .chart-title{font-size:14px;font-weight:600;color:#2C2C2A;margin-bottom:8px;text-align:center}
+  .chart-desc{font-size:12px;color:#888;text-align:center;margin-bottom:16px}
+  .legend-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px;margin:16px 0}
+  .legend-item{display:flex;align-items:center;gap:8px;font-size:13px}
+  .legend-color{width:14px;height:14px;border-radius:3px;flex-shrink:0}
+  .char-card{background:#fafaf8;border-radius:10px;padding:16px 20px;margin:12px 0;border-left:3px solid}
+  .char-card h4{font-size:14px;font-weight:600;margin-bottom:6px}
+  .char-card p{font-size:13px;color:#5F5E5A;margin-bottom:4px}
+  .tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:4px;margin-right:4px;margin-bottom:4px}
+  .summary-box{background:#f0efe8;border-radius:10px;padding:20px;margin:20px 0}
+  .summary-box h3{margin-top:0}
+  .summary-box ul{padding-left:20px;font-size:13px;color:#444}
+  .summary-box li{margin-bottom:6px}
+  table{width:100%;border-collapse:collapse;margin:16px 0;font-size:13px}
+  th{background:#f5f4f0;padding:10px 12px;text-align:left;font-weight:600;border-bottom:2px solid #E0DED8}
+  td{padding:10px 12px;border-bottom:1px solid #E8E6E0}
+  tr:hover td{background:#fafaf8}
+  .footer{margin-top:40px;padding-top:20px;border-top:1px solid #E8E6E0;font-size:12px;color:#999;text-align:center}
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>「十二飞鸟」叙事可视化总览</h1>
+<p class="subtitle">60天双线调查 · 12位飞鸟 · 27种结局 · 角色交织关系全景</p>
+
+<!-- ==================== Section 1: 剧情核心主线 ==================== -->
+<h2>一、剧情核心主线总览</h2>
+<p>故事以卧底警察黑羽义（化名黑羽哲也）潜入大阪风俗俱乐部"十二飞鸟"为起点，围绕<b>杀人线</b>（连环毒杀案）和<b>毒品线</b>（极乐泡沫流通网络）两条调查线展开。两线在Day 19-20首次交汇，最终在Day 43收网时合流，导向4条主线结局。</p>
+
+<div class="chart-box">
+  <div class="chart-title">剧情核心主线总览图</div>
+  <div class="chart-desc">三幕结构 · 双线调查 · 27种结局</div>
+  <svg viewBox="0 0 680 560" width="100%" role="img">
+    <title>十二飞鸟剧情核心主线总览</title>
+    <defs>
+      <marker id="arrow1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+        <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </marker>
+      <marker id="arrowSm1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+        <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </marker>
+    </defs>
+    <style>
+      .t1{font:14px sans-serif;fill:#2C2C2A}.ts1{font:12px sans-serif;fill:#5F5E5A}.th1{font:500 14px sans-serif;fill:#2C2C2A}.tl1{font:11px sans-serif;fill:#5F5E5A}.tBold1{font:500 13px sans-serif;fill:#2C2C2A}.tEnd1{font:500 12px sans-serif}
+    </style>
+    <text class="th1" x="340" y="28" text-anchor="middle" font-size="15">「十二飞鸟」剧情核心主线</text>
+    <text class="ts1" x="340" y="46" text-anchor="middle">60天 · 三幕 · 双线调查 · 27种结局</text>
+    <rect x="30" y="62" width="195" height="200" rx="12" fill="#EEEDFE" stroke="#AFA9EC" stroke-width="0.5"/>
+    <text class="th1" x="127" y="84" text-anchor="middle">第一幕「潜入」</text>
+    <text class="ts1" x="127" y="100" text-anchor="middle">Day 1 ~ 20</text>
+    <rect x="50" y="114" width="155" height="28" rx="6" fill="#fff" stroke="#AFA9EC" stroke-width="0.5"/>
+    <text class="tBold1" x="127" y="128" text-anchor="middle" dominant-baseline="central">Day 1 潜入俱乐部</text>
+    <rect x="50" y="150" width="155" height="28" rx="6" fill="#fff" stroke="#AFA9EC" stroke-width="0.5"/>
+    <text class="tBold1" x="127" y="164" text-anchor="middle" dominant-baseline="central">Day 8 增田殉职</text>
+    <rect x="50" y="186" width="155" height="28" rx="6" fill="#fff" stroke="#AFA9EC" stroke-width="0.5"/>
+    <text class="tBold1" x="127" y="200" text-anchor="middle" dominant-baseline="central">Day 15 佐藤倒计时</text>
+    <rect x="50" y="222" width="155" height="28" rx="6" fill="#FCEBEB" stroke="#E24B4A" stroke-width="0.5"/>
+    <text class="tBold1" x="127" y="236" text-anchor="middle" dominant-baseline="central" fill="#791F1F">BE01~BE10 危险区</text>
+    <rect x="242" y="62" width="196" height="200" rx="12" fill="#E1F5EE" stroke="#5DCAA5" stroke-width="0.5"/>
+    <text class="th1" x="340" y="84" text-anchor="middle">第二幕「迷局」</text>
+    <text class="ts1" x="340" y="100" text-anchor="middle">Day 21 ~ 45</text>
+    <rect x="262" y="114" width="156" height="28" rx="6" fill="#fff" stroke="#5DCAA5" stroke-width="0.5"/>
+    <text class="tBold1" x="340" y="128" text-anchor="middle" dominant-baseline="central">Day 26 幕后使者现身</text>
+    <rect x="262" y="150" width="156" height="28" rx="6" fill="#fff" stroke="#5DCAA5" stroke-width="0.5"/>
+    <text class="tBold1" x="340" y="164" text-anchor="middle" dominant-baseline="central">Day 31 佐藤被捕</text>
+    <rect x="262" y="186" width="156" height="28" rx="6" fill="#fff" stroke="#5DCAA5" stroke-width="0.5"/>
+    <text class="tBold1" x="340" y="200" text-anchor="middle" dominant-baseline="central">Day 38 台风夜·真相</text>
+    <rect x="262" y="222" width="156" height="28" rx="6" fill="#FCEBEB" stroke="#E24B4A" stroke-width="0.5"/>
+    <text class="tBold1" x="340" y="236" text-anchor="middle" dominant-baseline="central" fill="#791F1F">BE11~BE22 死亡区</text>
+    <rect x="455" y="62" width="195" height="200" rx="12" fill="#FAEEDA" stroke="#EF9F27" stroke-width="0.5"/>
+    <text class="th1" x="552" y="84" text-anchor="middle">第三幕「终幕」</text>
+    <text class="ts1" x="552" y="100" text-anchor="middle">Day 46 ~ 60</text>
+    <rect x="475" y="114" width="155" height="28" rx="6" fill="#fff" stroke="#EF9F27" stroke-width="0.5"/>
+    <text class="tBold1" x="552" y="128" text-anchor="middle" dominant-baseline="central">Day 43 收网·选择</text>
+    <rect x="475" y="150" width="155" height="28" rx="6" fill="#fff" stroke="#EF9F27" stroke-width="0.5"/>
+    <text class="tBold1" x="552" y="164" text-anchor="middle" dominant-baseline="central">Day 45 路线分叉</text>
+    <rect x="475" y="186" width="155" height="28" rx="6" fill="#fff" stroke="#EF9F27" stroke-width="0.5"/>
+    <text class="tBold1" x="552" y="200" text-anchor="middle" dominant-baseline="central">Day 46~60 结局展开</text>
+    <rect x="475" y="222" width="155" height="28" rx="6" fill="#E6F1FB" stroke="#378ADD" stroke-width="0.5"/>
+    <text class="tBold1" x="552" y="236" text-anchor="middle" dominant-baseline="central" fill="#0C447C">4主线结局</text>
+    <path d="M225 162 L242 162" fill="none" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow1)"/>
+    <path d="M438 162 L455 162" fill="none" stroke="#5F5E5A" stroke-width="1.5" marker-end="url(#arrow1)"/>
+    <text class="th1" x="340" y="286" text-anchor="middle">双线调查</text>
+    <rect x="50" y="300" width="280" height="80" rx="10" fill="#FAECE7" stroke="#F0997B" stroke-width="0.5"/>
+    <text class="tBold1" x="190" y="320" text-anchor="middle">杀人线 · 泡沫审判</text>
+    <text class="ts1" x="190" y="338" text-anchor="middle">雪鹤姬之死 → 连环毒杀案</text>
+    <text class="ts1" x="190" y="356" text-anchor="middle">真凶：青鹭姬·星野葵</text>
+    <text class="ts1" x="190" y="372" text-anchor="middle">动机：为恩人雪鹤姬复仇</text>
+    <rect x="350" y="300" width="280" height="80" rx="10" fill="#E6F1FB" stroke="#85B7EB" stroke-width="0.5"/>
+    <text class="tBold1" x="490" y="320" text-anchor="middle">毒品线 · 极乐泡沫</text>
+    <text class="ts1" x="490" y="338" text-anchor="middle">G-Rebirth流通网络 → 夜鸦集团</text>
+    <text class="ts1" x="490" y="356" text-anchor="middle">保护伞：村上道也（警方高层）</text>
+    <text class="ts1" x="490" y="372" text-anchor="middle">国际线：朱雀姬·Interpol</text>
+    <path d="M330 340 L350 340" fill="none" stroke="#5F5E5A" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow1)"/>
+    <text class="tl1" x="340" y="332" text-anchor="middle">交汇</text>
+    <rect x="130" y="398" width="420" height="36" rx="8" fill="#FBEAF0" stroke="#ED93B1" stroke-width="0.5"/>
+    <text class="tBold1" x="340" y="416" text-anchor="middle" dominant-baseline="central">真相：青鹭姬用仇人的毒品提纯毒药杀人 · 村上道也是一切元凶</text>
+    <path d="M340 340 L340 398" fill="none" stroke="#5F5E5A" stroke-width="0.5" stroke-dasharray="2,2"/>
+    <text class="th1" x="340" y="458" text-anchor="middle">四条主线结局（Day 46~60）</text>
+    <rect x="40" y="472" width="145" height="44" rx="8" fill="#E6F1FB" stroke="#378ADD" stroke-width="0.5"/>
+    <text class="tEnd1" x="112" y="490" text-anchor="middle" dominant-baseline="central" fill="#0C447C">END-A</text>
+    <text class="ts1" x="112" y="506" text-anchor="middle" dominant-baseline="central">法理的正义</text>
+    <rect x="198" y="472" width="145" height="44" rx="8" fill="#E1F5EE" stroke="#1D9E75" stroke-width="0.5"/>
+    <text class="tEnd1" x="270" y="490" text-anchor="middle" dominant-baseline="central" fill="#085041">END-B</text>
+    <text class="ts1" x="270" y="506" text-anchor="middle" dominant-baseline="central">堕落的正义</text>
+    <rect x="356" y="472" width="145" height="44" rx="8" fill="#FAECE7" stroke="#D85A30" stroke-width="0.5"/>
+    <text class="tEnd1" x="428" y="490" text-anchor="middle" dominant-baseline="central" fill="#4A1B0C">END-C</text>
+    <text class="ts1" x="428" y="506" text-anchor="middle" dominant-baseline="central">彻底的沉沦</text>
+    <rect x="497" y="472" width="145" height="44" rx="8" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
+    <text class="tEnd1" x="569" y="490" text-anchor="middle" dominant-baseline="central" fill="#412402">END-D (TE)</text>
+    <text class="ts1" x="569" y="506" text-anchor="middle" dominant-baseline="central">朱雀的绽放</text>
+    <path d="M340 434 L340 448" fill="none" stroke="#5F5E5A" stroke-width="0.5"/>
+    <path d="M112 448 L569 448" fill="none" stroke="#5F5E5A" stroke-width="0.5"/>
+    <path d="M112 448 L112 472" fill="none" stroke="#5F5E5A" stroke-width="0.5" marker-end="url(#arrowSm1)"/>
+    <path d="M270 448 L270 472" fill="none" stroke="#5F5E5A" stroke-width="0.5" marker-end="url(#arrowSm1)"/>
+    <path d="M428 448 L428 472" fill="none" stroke="#5F5E5A" stroke-width="0.5" marker-end="url(#arrowSm1)"/>
+    <path d="M569 448 L569 472" fill="none" stroke="#5F5E5A" stroke-width="0.5" marker-end="url(#arrowSm1)"/>
+    <text class="ts1" x="340" y="538" text-anchor="middle">另有 23 种中途坏结局 (BE01~BE22+BE14a) 散布于 Day 2~45</text>
+    <text class="tl1" x="340" y="554" text-anchor="middle">所有BE由玩家选择触发，好感度仅影响叙事语气</text>
+  </svg>
+</div>
+
+<!-- ==================== Section 2: 角色阵营 ==================== -->
+<h2>二、角色阵营与叙事功能</h2>
+<p>12位"飞鸟"角色按叙事功能分为四组，每组承担不同的剧情驱动职责。理解分组有助于把握角色出场的叙事节奏。</p>
+
+<div class="legend-grid">
+  <div class="legend-item"><span class="legend-color" style="background:#D85A30"></span>贩毒阵营（白鹤/村上）</div>
+  <div class="legend-item"><span class="legend-color" style="background:#378ADD"></span>警方阵营（佐藤/增田/东乡）</div>
+  <div class="legend-item"><span class="legend-color" style="background:#7F77DD"></span>主角（黑羽哲也）</div>
+  <div class="legend-item"><span class="legend-color" style="background:#ED93B1"></span>真凶线（青鹭姬）</div>
+  <div class="legend-item"><span class="legend-color" style="background:#BA7517"></span>同盟线（朱雀姬）</div>
+  <div class="legend-item"><span class="legend-color" style="background:#5DCAA5"></span>纯爱线（莉香）</div>
+  <div class="legend-item"><span class="legend-color" style="background:#97C459"></span>救赎线（巢燕/雏鹃/早莺）</div>
+  <div class="legend-item"><span class="legend-color" style="background:#888780"></span>情报线（夜鸢/银鹮/诡鹀）</div>
+</div>
+
+<table>
+  <thead>
+    <tr><th>角色</th><th>月份</th><th>叙事功能</th><th>核心秘密</th><th>完结日</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>白鹤姬·桂原雪代</td><td>一月</td><td>主要反派 / 俱乐部掌控者</td><td>贩毒网络代理人</td><td>Day 38</td></tr>
+    <tr><td>早莺姬·小野南梨</td><td>二月</td><td>救赎线 / 家暴受害者</td><td>男友利用她</td><td>Day 36</td></tr>
+    <tr><td>巢燕姬·谷川景子</td><td>三月</td><td>情感锚点 / 母亲</td><td>女儿是最大软肋</td><td>Day 40</td></tr>
+    <tr><td>青鹭姬·星野葵</td><td>四月</td><td>真凶 / 复仇者</td><td>用毒品提纯毒药杀人</td><td>Day 38</td></tr>
+    <tr><td>黄鹂姬·日向夏实</td><td>五月</td><td>关键证人 / 面具</td><td>雪鹤姬自杀第一发现人</td><td>Day 42</td></tr>
+    <tr><td>神鸦姬·神乐坂紫</td><td>六月</td><td>预言者 / 谜团</td><td>首次占卜极准，之后必错</td><td>Day 39</td></tr>
+    <tr><td>朱雀姬·Linda</td><td>七月</td><td>同盟 / 国际线</td><td>Interpol搜查官</td><td>Day 43</td></tr>
+    <tr><td>夜鸢姬·美咲蔷薇</td><td>八月</td><td>情报商 / 黑皮书</td><td>掌握所有人秘密</td><td>Day 42</td></tr>
+    <tr><td>双雀姬·彩&amp;瞳</td><td>九月</td><td>镜像谜题</td><td>妹妹几乎丧失独立人格</td><td>Day 39</td></tr>
+    <tr><td>雏鹃姬·芦田育子</td><td>十月</td><td>纯真象征 / 成长线</td><td>被骗签下债务契约</td><td>Day 44</td></tr>
+    <tr><td>银鹮姬·神宫寺丽莎</td><td>十一月</td><td>金融线 / 引荐者</td><td>引入Phoenix Coin虚拟货币</td><td>Day 40</td></tr>
+    <tr><td>诡鹀姬·木岛春奈</td><td>十二月</td><td>变形者 / 仿妆</td><td>可以变成任何人</td><td>Day 41</td></tr>
+  </tbody>
+</table>
+
+<!-- ==================== Section 3: 角色关系网络 ==================== -->
+<h2>三、角色关系网络</h2>
+<p>以主角黑羽哲也为中心，12位飞鸟角色围绕展开。虚线标注隐藏身份和暗中关系——这些关系在游戏进程中逐步揭露，是叙事悬念的核心来源。</p>
+
+<div class="chart-box">
+  <div class="chart-title">角色关系网络图</div>
+  <div class="chart-desc">实线=已知关系 · 虚线=隐藏身份 · 颜色=阵营</div>
+  <svg viewBox="0 0 680 680" width="100%" role="img">
+    <title>十二飞鸟角色关系网络</title>
+    <defs>
+      <marker id="arrow2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+        <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </marker>
+    </defs>
+    <style>
+      .th2{font:500 14px sans-serif;fill:#2C2C2A}.ts2{font:12px sans-serif;fill:#5F5E5A}.tn2{font:500 12px sans-serif}.tS2{font:10px sans-serif;fill:#888780}
+    </style>
+    <text class="th2" x="340" y="24" text-anchor="middle" font-size="15">「十二飞鸟」角色关系网络</text>
+    <text class="ts2" x="340" y="42" text-anchor="middle">实线 = 已知关系 · 虚线 = 隐藏身份 · 颜色 = 阵营</text>
+    <rect x="420" y="58" width="230" height="110" rx="12" fill="#FAECE7" stroke="#F0997B" stroke-width="0.5" stroke-dasharray="4,3"/>
+    <text class="tn2" x="535" y="76" text-anchor="middle" fill="#993C1D">贩毒网络 / 夜鸦集团</text>
+    <rect x="440" y="86" width="90" height="32" rx="6" fill="#fff" stroke="#D85A30" stroke-width="0.5"/>
+    <text class="tn2" x="485" y="98" text-anchor="middle" dominant-baseline="central" fill="#4A1B0C">白鹤姬</text>
+    <text class="tS2" x="485" y="112" text-anchor="middle">桂原雪代 · 一月</text>
+    <rect x="540" y="86" width="95" height="32" rx="6" fill="#fff" stroke="#D85A30" stroke-width="0.5"/>
+    <text class="tn2" x="587" y="98" text-anchor="middle" dominant-baseline="central" fill="#4A1B0C">村上道也</text>
+    <text class="tS2" x="587" y="112" text-anchor="middle">警方保护伞</text>
+    <rect x="440" y="126" width="195" height="32" rx="6" fill="#fff" stroke="#F0997B" stroke-width="0.5"/>
+    <text class="tn2" x="537" y="138" text-anchor="middle" dominant-baseline="central" fill="#993C1D">夜鸦集团 · 制药公司</text>
+    <text class="tS2" x="537" y="152" text-anchor="middle">G-Rebirth 毒品供应链</text>
+    <rect x="30" y="58" width="230" height="110" rx="12" fill="#E6F1FB" stroke="#85B7EB" stroke-width="0.5"/>
+    <text class="tn2" x="145" y="76" text-anchor="middle" fill="#0C447C">警方阵营</text>
+    <rect x="48" y="86" width="90" height="32" rx="6" fill="#fff" stroke="#378ADD" stroke-width="0.5"/>
+    <text class="tn2" x="93" y="98" text-anchor="middle" dominant-baseline="central" fill="#0C447C">佐藤正义</text>
+    <text class="tS2" x="93" y="112" text-anchor="middle">联络人</text>
+    <rect x="148" y="86" width="95" height="32" rx="6" fill="#fff" stroke="#378ADD" stroke-width="0.5"/>
+    <text class="tn2" x="195" y="98" text-anchor="middle" dominant-baseline="central" fill="#0C447C">增田一郎</text>
+    <text class="tS2" x="195" y="112" text-anchor="middle">原上级 · Day8殉职</text>
+    <rect x="48" y="126" width="195" height="32" rx="6" fill="#fff" stroke="#85B7EB" stroke-width="0.5"/>
+    <text class="tn2" x="145" y="138" text-anchor="middle" dominant-baseline="central" fill="#0C447C">东乡树</text>
+    <text class="tS2" x="145" y="152" text-anchor="middle">临近退休 · 明哲保身</text>
+    <circle cx="340" cy="300" r="52" fill="#EEEDFE" stroke="#534AB7" stroke-width="1"/>
+    <text class="th2" x="340" y="292" text-anchor="middle" dominant-baseline="central">黑羽哲也</text>
+    <text class="ts2" x="340" y="308" text-anchor="middle" dominant-baseline="central">卧底警察</text>
+    <text class="tS2" x="340" y="324" text-anchor="middle" dominant-baseline="central">真名：黑羽义</text>
+    <rect x="295" y="180" width="90" height="32" rx="6" fill="#FBEAF0" stroke="#ED93B1" stroke-width="0.5"/>
+    <text class="tn2" x="340" y="192" text-anchor="middle" dominant-baseline="central" fill="#72243E">青鹭姬</text>
+    <text class="tS2" x="340" y="206" text-anchor="middle">星野葵 · 真凶</text>
+    <rect x="490" y="284" width="90" height="32" rx="6" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
+    <text class="tn2" x="535" y="296" text-anchor="middle" dominant-baseline="central" fill="#412402">朱雀姬</text>
+    <text class="tS2" x="535" y="310" text-anchor="middle">Linda · Interpol</text>
+    <rect x="445" y="380" width="90" height="32" rx="6" fill="#F1EFE8" stroke="#888780" stroke-width="0.5"/>
+    <text class="tn2" x="490" y="392" text-anchor="middle" dominant-baseline="central" fill="#444441">夜鸢姬</text>
+    <text class="tS2" x="490" y="406" text-anchor="middle">蔷薇 · 情报商</text>
+    <rect x="100" y="284" width="90" height="32" rx="6" fill="#FAEEDA" stroke="#EF9F27" stroke-width="0.5"/>
+    <text class="tn2" x="145" y="296" text-anchor="middle" dominant-baseline="central" fill="#412402">黄鹂姬</text>
+    <text class="tS2" x="145" y="310" text-anchor="middle">夏实 · 目击者</text>
+    <rect x="145" y="380" width="90" height="32" rx="6" fill="#EAF3DE" stroke="#97C459" stroke-width="0.5"/>
+    <text class="tn2" x="190" y="392" text-anchor="middle" dominant-baseline="central" fill="#27500A">巢燕姬</text>
+    <text class="tS2" x="190" y="406" text-anchor="middle">景子 · 母亲</text>
+    <rect x="180" y="190" width="90" height="32" rx="6" fill="#FAECE7" stroke="#D85A30" stroke-width="0.5"/>
+    <text class="tn2" x="225" y="202" text-anchor="middle" dominant-baseline="central" fill="#4A1B0C">早莺姬</text>
+    <text class="tS2" x="225" y="216" text-anchor="middle">南梨 · 家暴</text>
+    <rect x="295" y="400" width="90" height="32" rx="6" fill="#EAF3DE" stroke="#639922" stroke-width="0.5"/>
+    <text class="tn2" x="340" y="412" text-anchor="middle" dominant-baseline="central" fill="#173404">雏鹃姬</text>
+    <text class="tS2" x="340" y="426" text-anchor="middle">育子 · 16岁</text>
+    <rect x="400" y="440" width="90" height="32" rx="6" fill="#EEEDFE" stroke="#7F77DD" stroke-width="0.5"/>
+    <text class="tn2" x="445" y="452" text-anchor="middle" dominant-baseline="central" fill="#3C3489">神鸦姬</text>
+    <text class="tS2" x="445" y="466" text-anchor="middle">紫 · 占卜</text>
+    <rect x="410" y="190" width="90" height="32" rx="6" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.5"/>
+    <text class="tn2" x="455" y="202" text-anchor="middle" dominant-baseline="central" fill="#444441">双雀姬</text>
+    <text class="tS2" x="455" y="216" text-anchor="middle">彩&amp;瞳 · 马戏团</text>
+    <rect x="80" y="380" width="90" height="32" rx="6" fill="#E6F1FB" stroke="#378ADD" stroke-width="0.5"/>
+    <text class="tn2" x="125" y="392" text-anchor="middle" dominant-baseline="central" fill="#0C447C">银鹮姬</text>
+    <text class="tS2" x="125" y="406" text-anchor="middle">丽莎 · 金融</text>
+    <rect x="60" y="190" width="90" height="32" rx="6" fill="#FBEAF0" stroke="#D4537E" stroke-width="0.5"/>
+    <text class="tn2" x="105" y="202" text-anchor="middle" dominant-baseline="central" fill="#72243E">诡鹀姬</text>
+    <text class="tS2" x="105" y="216" text-anchor="middle">春奈 · 仿妆</text>
+    <rect x="280" y="510" width="120" height="32" rx="6" fill="#E1F5EE" stroke="#5DCAA5" stroke-width="0.5"/>
+    <text class="tn2" x="340" y="522" text-anchor="middle" dominant-baseline="central" fill="#085041">小林莉香</text>
+    <text class="tS2" x="340" y="536" text-anchor="middle">女友 · 澳洲留学</text>
+    <rect x="260" y="100" width="80" height="32" rx="6" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.5" stroke-dasharray="3,2"/>
+    <text class="tn2" x="300" y="112" text-anchor="middle" dominant-baseline="central" fill="#888780">雪鹤姬</text>
+    <text class="tS2" x="300" y="126" text-anchor="middle">如月冬雪 · 已故</text>
+    <rect x="490" y="510" width="100" height="32" rx="6" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.5"/>
+    <text class="tn2" x="540" y="522" text-anchor="middle" dominant-baseline="central" fill="#444441">江口裕二</text>
+    <text class="tS2" x="540" y="536" text-anchor="middle">记者 · Day29登场</text>
+    <rect x="90" y="510" width="90" height="32" rx="6" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.5"/>
+    <text class="tn2" x="135" y="522" text-anchor="middle" dominant-baseline="central" fill="#444441">拉面店老板</text>
+    <text class="tS2" x="135" y="536" text-anchor="middle">情报角</text>
+    <line x1="340" y1="248" x2="340" y2="212" stroke="#5F5E5A" stroke-width="0.5"/>
+    <line x1="388" y1="290" x2="490" y2="296" stroke="#5F5E5A" stroke-width="0.5"/>
+    <line x1="382" y1="330" x2="445" y2="380" stroke="#5F5E5A" stroke-width="0.5"/>
+    <line x1="292" y1="296" x2="190" y2="296" stroke="#5F5E5A" stroke-width="0.5"/>
+    <line x1="300" y1="330" x2="235" y2="380" stroke="#5F5E5A" stroke-width="0.5"/>
+    <line x1="340" y1="352" x2="340" y2="400" stroke="#5F5E5A" stroke-width="0.5"/>
+    <line x1="370" y1="345" x2="400" y2="440" stroke="#5F5E5A" stroke-width="0.5"/>
+    <line x1="380" y1="275" x2="410" y2="210" stroke="#5F5E5A" stroke-width="0.5"/>
+    <line x1="295" y1="275" x2="170" y2="210" stroke="#5F5E5A" stroke-width="0.5"/>
+    <line x1="298" y1="345" x2="170" y2="380" stroke="#5F5E5A" stroke-width="0.5"/>
+    <line x1="300" y1="275" x2="270" y2="222" stroke="#5F5E5A" stroke-width="0.5"/>
+    <line x1="340" y1="352" x2="340" y2="510" stroke="#1D9E75" stroke-width="0.5" stroke-dasharray="3,2"/>
+    <line x1="298" y1="275" x2="138" y2="118" stroke="#378ADD" stroke-width="0.5"/>
+    <line x1="375" y1="270" x2="440" y2="118" stroke="#D85A30" stroke-width="0.5"/>
+    <path d="M335 180 Q 320 150 310 132" fill="none" stroke="#ED93B1" stroke-width="1" stroke-dasharray="4,3"/>
+    <text class="tS2" x="345" y="145" fill="#72243E">复仇</text>
+    <line x1="530" y1="102" x2="540" y2="102" stroke="#D85A30" stroke-width="1"/>
+    <path d="M370 196 Q 430 140 440 102" fill="none" stroke="#E24B4A" stroke-width="1" stroke-dasharray="4,3"/>
+    <text class="tS2" x="420" y="150" fill="#791F1F">毒杀目标</text>
+    <path d="M180 290 Q 250 200 280 132" fill="none" stroke="#BA7517" stroke-width="0.5" stroke-dasharray="3,2"/>
+    <text class="tS2" x="220" y="200" fill="#854F0B">目击</text>
+    <line x1="490" y1="300" x2="392" y2="300" stroke="#BA7517" stroke-width="1" stroke-dasharray="4,3"/>
+    <text class="tS2" x="430" y="290" fill="#412402">同盟</text>
+    <path d="M490 380 Q 520 250 485 118" fill="none" stroke="#888780" stroke-width="0.5" stroke-dasharray="3,2"/>
+    <path d="M138 102 Q 300 60 540 86" fill="none" stroke="#E24B4A" stroke-width="0.5" stroke-dasharray="4,3"/>
+    <text class="tS2" x="340" y="62" fill="#791F1F">被压制</text>
+    <line x1="148" y1="102" x2="138" y2="102" stroke="#378ADD" stroke-width="1" marker-end="url(#arrow2)"/>
+    <path d="M170 385 Q 300 330 440 126" fill="none" stroke="#D85A30" stroke-width="0.5" stroke-dasharray="3,2"/>
+    <text class="tS2" x="310" y="330" fill="#993C1D">引荐</text>
+    <rect x="30" y="560" width="620" height="100" rx="10" fill="#F1EFE8" stroke="#D3D1C7" stroke-width="0.5"/>
+    <text class="th2" x="50" y="582">图例</text>
+    <line x1="50" y1="598" x2="80" y2="598" stroke="#5F5E5A" stroke-width="0.5"/>
+    <text class="ts2" x="86" y="602">已知关系</text>
+    <line x1="160" y1="598" x2="190" y2="598" stroke="#5F5E5A" stroke-width="0.5" stroke-dasharray="4,3"/>
+    <text class="ts2" x="196" y="602">隐藏/暗中关系</text>
+    <rect x="310" y="592" width="12" height="12" rx="2" fill="#FAECE7" stroke="#F0997B" stroke-width="0.5"/>
+    <text class="ts2" x="328" y="602">贩毒阵营</text>
+    <rect x="400" y="592" width="12" height="12" rx="2" fill="#E6F1FB" stroke="#85B7EB" stroke-width="0.5"/>
+    <text class="ts2" x="418" y="602">警方阵营</text>
+    <rect x="490" y="592" width="12" height="12" rx="2" fill="#EEEDFE" stroke="#7F77DD" stroke-width="0.5"/>
+    <text class="ts2" x="508" y="602">主角</text>
+    <rect x="560" y="592" width="12" height="12" rx="2" fill="#F1EFE8" stroke="#B4B2A9" stroke-width="0.5" stroke-dasharray="2,1"/>
+    <text class="ts2" x="578" y="602">已故/背景</text>
+    <text class="ts2" x="50" y="625">角色颜色 = 该角色所属阵营或叙事功能</text>
+    <text class="ts2" x="50" y="644">核心关系：青鹭(真凶)←复仇→雪鹤(死者) | 白鹤←合作→村上 | 朱雀←同盟→主角</text>
+  </svg>
+</div>
+
+<!-- ==================== Section 4: 角色故事线 ==================== -->
+<h2>四、核心角色个人故事线</h2>
+<p>每个角色严格遵循<b>四阶段递进结构</b>：初识（Day 1-10）→ 加深（Day 11-20）→ 依赖（Day 21-30）→ 抉择（Day 31-45）。阶段四的颜色加深表示角色达到叙事高潮，此时的选择直接决定结局走向。</p>
+
+<div class="chart-box">
+  <div class="chart-title">核心角色个人故事线</div>
+  <div class="chart-desc">四阶段递进：初识 → 加深 → 依赖 → 抉择</div>
+  <svg viewBox="0 0 680 720" width="100%" role="img">
+    <title>十二飞鸟核心角色故事线</title>
+    <defs>
+      <marker id="arrow3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+        <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </marker>
+    </defs>
+    <style>
+      .th3{font:500 14px sans-serif;fill:#2C2C2A}.ts3{font:12px sans-serif;fill:#5F5E5A}.tn3{font:500 12px sans-serif}.tS3{font:10px sans-serif;fill:#888780}.stage3{font:500 11px sans-serif;fill:#5F5E5A}
+    </style>
+    <text class="th3" x="340" y="24" text-anchor="middle" font-size="15">核心角色个人故事线</text>
+    <text class="ts3" x="340" y="42" text-anchor="middle">四阶段递进：初识 → 加深 → 依赖 → 抉择</text>
+    <text class="stage3" x="115" y="66" text-anchor="middle">阶段一 初识</text>
+    <text class="stage3" x="265" y="66" text-anchor="middle">阶段二 加深</text>
+    <text class="stage3" x="415" y="66" text-anchor="middle">阶段三 依赖</text>
+    <text class="stage3" x="565" y="66" text-anchor="middle">阶段四 抉择</text>
+    <text class="stage3" x="635" y="66" text-anchor="middle">完结</text>
+    <line x1="190" y1="56" x2="190" y2="710" stroke="#D3D1C7" stroke-width="0.5" stroke-dasharray="3,3"/>
+    <line x1="340" y1="56" x2="340" y2="710" stroke="#D3D1C7" stroke-width="0.5" stroke-dasharray="3,3"/>
+    <line x1="490" y1="56" x2="490" y2="710" stroke="#D3D1C7" stroke-width="0.5" stroke-dasharray="3,3"/>
+    <line x1="610" y1="56" x2="610" y2="710" stroke="#D3D1C7" stroke-width="0.5" stroke-dasharray="3,3"/>
+    <text class="tn3" x="40" y="92" fill="#4A1B0C">白鹤姬</text><text class="tS3" x="40" y="106">桂原雪代</text><text class="tS3" x="40" y="120"> antagonist</text>
+    <rect x="55" y="82" width="120" height="48" rx="6" fill="#FAECE7" stroke="#D85A30" stroke-width="0.5"/>
+    <text class="ts3" x="115" y="100" text-anchor="middle">浴室考验</text><text class="tS3" x="115" y="116" text-anchor="middle">Day1-2 · 掌控欲</text>
+    <rect x="205" y="82" width="120" height="48" rx="6" fill="#FAECE7" stroke="#D85A30" stroke-width="0.5"/>
+    <text class="ts3" x="265" y="100" text-anchor="middle">绳索理论→真账簿</text><text class="tS3" x="265" y="116" text-anchor="middle">Day10-20 · 试探</text>
+    <rect x="355" y="82" width="120" height="48" rx="6" fill="#FAECE7" stroke="#D85A30" stroke-width="0.5"/>
+    <text class="ts3" x="415" y="100" text-anchor="middle">天台独饮</text><text class="tS3" x="415" y="116" text-anchor="middle">Day22-30 · 裂痕</text>
+    <rect x="505" y="82" width="100" height="48" rx="6" fill="#FCEBEB" stroke="#E24B4A" stroke-width="0.5"/>
+    <text class="ts3" x="555" y="100" text-anchor="middle">台风夜长谈</text><text class="tS3" x="555" y="116" text-anchor="middle">Day38 · 最后夜</text>
+    <rect x="615" y="86" width="50" height="40" rx="6" fill="#F5C4B3" stroke="#D85A30" stroke-width="0.5"/>
+    <text class="tn3" x="640" y="100" text-anchor="middle" dominant-baseline="central" fill="#4A1B0C">Day38</text><text class="tS3" x="640" y="114" text-anchor="middle">完结</text>
+    <line x1="175" y1="106" x2="205" y2="106" stroke="#D85A30" stroke-width="0.5" marker-end="url(#arrow3)"/>
+    <line x1="325" y1="106" x2="355" y2="106" stroke="#D85A30" stroke-width="0.5" marker-end="url(#arrow3)"/>
+    <line x1="475" y1="106" x2="505" y2="106" stroke="#D85A30" stroke-width="0.5" marker-end="url(#arrow3)"/>
+    <line x1="605" y1="106" x2="615" y2="106" stroke="#D85A30" stroke-width="0.5"/>
+    <text class="tn3" x="40" y="162" fill="#72243E">青鹭姬</text><text class="tS3" x="40" y="176">星野葵</text><text class="tS3" x="40" y="190">真凶/复仇者</text>
+    <rect x="55" y="152" width="120" height="48" rx="6" fill="#FBEAF0" stroke="#ED93B1" stroke-width="0.5"/>
+    <text class="ts3" x="115" y="170" text-anchor="middle">药箱相遇</text><text class="tS3" x="115" y="186" text-anchor="middle">Day7 · 治愈系</text>
+    <rect x="205" y="152" width="120" height="48" rx="6" fill="#FBEAF0" stroke="#ED93B1" stroke-width="0.5"/>
+    <text class="ts3" x="265" y="170" text-anchor="middle">药妆店→实验</text><text class="tS3" x="265" y="186" text-anchor="middle">Day12-17 · 疑踪</text>
+    <rect x="355" y="152" width="120" height="48" rx="6" fill="#FBEAF0" stroke="#ED93B1" stroke-width="0.5"/>
+    <text class="ts3" x="415" y="170" text-anchor="middle">回忆恩人→杀意</text><text class="tS3" x="415" y="186" text-anchor="middle">Day15-29 · 浮出</text>
+    <rect x="505" y="152" width="100" height="48" rx="6" fill="#F09595" stroke="#E24B4A" stroke-width="0.5"/>
+    <text class="ts3" x="555" y="170" text-anchor="middle" fill="#fff">协定→最终选择</text><text class="tS3" x="555" y="186" text-anchor="middle" fill="#FCEBEB">Day34-43</text>
+    <rect x="615" y="156" width="50" height="40" rx="6" fill="#ED93B1" stroke="#D4537E" stroke-width="0.5"/>
+    <text class="tn3" x="640" y="170" text-anchor="middle" dominant-baseline="central" fill="#fff">Day38</text><text class="tS3" x="640" y="184" text-anchor="middle" fill="#fff">完结</text>
+    <line x1="175" y1="176" x2="205" y2="176" stroke="#ED93B1" stroke-width="0.5" marker-end="url(#arrow3)"/>
+    <line x1="325" y1="176" x2="355" y2="176" stroke="#ED93B1" stroke-width="0.5" marker-end="url(#arrow3)"/>
+    <line x1="475" y1="176" x2="505" y2="176" stroke="#ED93B1" stroke-width="0.5" marker-end="url(#arrow3)"/>
+    <line x1="605" y1="176" x2="615" y2="176" stroke="#ED93B1" stroke-width="0.5"/>
+    <text class="tn3" x="40" y="232" fill="#412402">朱雀姬</text><text class="tS3" x="40" y="246">Linda</text><text class="tS3" x="40" y="260">Interpol/同盟</text>
+    <rect x="55" y="222" width="120" height="48" rx="6" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
+    <text class="ts3" x="115" y="240" text-anchor="middle">初次见面</text><text class="tS3" x="115" y="256" text-anchor="middle">Day2 · 野性玫瑰</text>
+    <rect x="205" y="222" width="120" height="48" rx="6" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
+    <text class="ts3" x="265" y="240" text-anchor="middle">密会→酒会情报</text><text class="tS3" x="265" y="256" text-anchor="middle">Day12-19 · 联络链</text>
+    <rect x="355" y="222" width="120" height="48" rx="6" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
+    <text class="ts3" x="415" y="240" text-anchor="middle">坦白非普通公关</text><text class="tS3" x="415" y="256" text-anchor="middle">Day23-25 · 半揭</text>
+    <rect x="505" y="222" width="100" height="48" rx="6" fill="#EF9F27" stroke="#BA7517" stroke-width="0.5"/>
+    <text class="ts3" x="555" y="240" text-anchor="middle" fill="#fff">Interpol身份→设局</text><text class="tS3" x="555" y="256" text-anchor="middle" fill="#FAEEDA">Day36-41</text>
+    <rect x="615" y="226" width="50" height="40" rx="6" fill="#BA7517" stroke="#854F0B" stroke-width="0.5"/>
+    <text class="tn3" x="640" y="240" text-anchor="middle" dominant-baseline="central" fill="#fff">Day43</text><text class="tS3" x="640" y="254" text-anchor="middle" fill="#fff">完结</text>
+    <line x1="175" y1="246" x2="205" y2="246" stroke="#BA7517" stroke-width="0.5" marker-end="url(#arrow3)"/>
+    <line x1="325" y1="246" x2="355" y2="246" stroke="#BA7517" stroke-width="0.5" marker-end="url(#arrow3)"/>
+    <line x1="475" y1="246" x2="505" y2="246" stroke="#BA7517" stroke-width="0.5" marker-end="url(#arrow3)"/>
+    <line x1="605" y1="246" x2="615" y2="246" stroke="#BA7517" stroke-width="0.5"/>
+    <text class="tn3" x="40" y="302" fill="#27500A">巢燕姬</text><text class="tS3" x="40" y="316">谷川景子</text><text class="tS3" x="40" y="330">母亲/软肋</text>
+    <rect x="55" y="292" width="120" height="48" rx="6" fill="#EAF3DE" stroke="#97C459" stroke-width="0.5"/>
+    <text class="ts3" x="115" y="310" text-anchor="middle">寝具店偶遇母女</text><text class="tS3" x="115" y="326" text-anchor="middle">Day4 · 温柔</text>
+    <rect x="205" y="292" width="120" height="48" rx="6" fill="#EAF3DE" stroke="#97C459" stroke-width="0.5"/>
+    <text class="ts3" x="265" y="310" text-anchor="middle">便当→小澪生日</text><text class="tS3" x="265" y="326" text-anchor="middle">Day11-13 · 羁绊</text>
+    <rect x="355" y="292" width="120" height="48" rx="6" fill="#EAF3DE" stroke="#97C459" stroke-width="0.5"/>
+    <text class="ts3" x="415" y="310" text-anchor="middle">小澪发烧→恐惧</text><text class="tS3" x="415" y="326" text-anchor="middle">Day22-28 · 危机</text>
+    <rect x="505" y="292" width="100" height="48" rx="6" fill="#97C459" stroke="#639922" stroke-width="0.5"/>
+    <text class="ts3" x="555" y="310" text-anchor="middle" fill="#fff">坦白→转学决定</text><text class="tS3" x="555" y="326" text-anchor="middle" fill="#EAF3DE">Day33-40</text>
+    <rect x="615" y="296" width="50" height="40" rx="6" fill="#639922" stroke="#3B6D11" stroke-width="0.5"/>
+    <text class="tn3" x="640" y="310" text-anchor="middle" dominant-baseline="central" fill="#fff">Day40</text><text class="tS3" x="640" y="324" text-anchor="middle" fill="#fff">完结</text>
+    <line x1="175" y1="316" x2="205" y2="316" stroke="#97C459" stroke-width="0.5" marker-end="url(#arrow3)"/>
+    <line x1="325" y1="316" x2="355" y2="316" stroke="#97C459" stroke-width="0.5" marker-end="url(#arrow3)"/>
+    <line x1="475" y1="316" x2="505" y2="316" stroke="#97C459" stroke-width="0.5" marker-end="url(#arrow3)"/>
+    <line x1="605" y1="316" x2="615" y2="316" stroke="#97C459" stroke-width="0.5"/>
+    <text class="tn3" x="40" y="372" fill="#4A1B0C">早莺姬</text><text class="tS3" x="40" y="386">小野南梨</text><text class="tS3" x="40" y="400">家暴/救赎</text>
+    <rect x="55" y="362" width="120" height="48" rx="6" fill="#FAECE7" stroke="#D85A30" stroke-width="0.5"/>
+    <text class="ts3" x="115" y="380" text-anchor="middle">找内衣→叫车→伤痕</text><text class="tS3" x="115" y="396" text-anchor="middle">Day3-5 · 淤青</text>
+    <rect x="205" y="362" width="120" height="48" rx="6" fill="#FAECE7" stroke="#D85A30" stroke-width="0.5"/>
+    <text class="ts3" x="265" y="380" text-anchor="middle">求救→探病化疗</text><text class="tS3" x="265" y="396" text-anchor="middle">Day11-14 · 深陷</text>
+    <rect x="355" y="362" width="120" height="48" rx="6" fill="#FAECE7" stroke="#D85A30" stroke-width="0.5"/>
+    <text class="ts3" x="415" y="380" text-anchor="middle">围巾→动摇</text><text class="tS3" x="415" y="396" text-anchor="middle">Day21-25 · 挣扎</text>
+    <rect x="505" y="362" width="100" height="48" rx="6" fill="#D85A30" stroke="#993C1D" stroke-width="0.5"/>
+    <text class="ts3" x="555" y="380" text-anchor="middle" fill="#fff">崩溃→诀别回老家</text><text class="tS3" x="555" y="396" text-anchor="middle" fill="#FAECE7">Day31-36</text>
+    <rect x="615" y="366" width="50" height="40" rx="6" fill="#993C1D" stroke="#712B13" stroke-width="0.5"/>
+    <text class="tn3" x="640" y="380" text-anchor="middle" dominant-baseline="central" fill="#fff">Day36</text><text class="tS3" x="640" y="394" text-anchor="middle" fill="#fff">完结</text>
+    <line x1="175" y1="386" x2="205" y2="386" stroke="#D85A30" stroke-width="0.5" marker-end="url(#arrow3)"/>
+    <line x1="325" y1="386" x2="355" y2="386" stroke="#D85A30" stroke-width="0.5" marker-end="url(#arrow3)"/>
+    <line x1="475" y1="386" x2="505" y2="386" stroke="#D85A30" stroke-width="0.5" marker-end="url(#arrow3)"/>
+    <line x1="605" y1="386" x2="615" y2="386" stroke="#D85A30" stroke-width="0.5"/>
+    <text class="tn3" x="40" y="442" fill="#173404">雏鹃姬</text><text class="tS3" x="40" y="456">芦田育子</text><text class="tS3" x="40" y="470">16岁/纯真</text>
+    <rect x="55" y="432" width="120" height="48" rx="6" fill="#EAF3DE" stroke="#639922" stroke-width="0.5"/>
+    <text class="ts3" x="115" y="450" text-anchor="middle">登场→床垫→拉面</text><text class="tS3" x="115" y="466" text-anchor="middle">Day4-5 · 怯弱</text>
+    <rect x="205" y="432" width="120" height="48" rx="6" fill="#EAF3DE" stroke="#639922" stroke-width="0.5"/>
+    <text class="ts3" x="265" y="450" text-anchor="middle">来信→学化妆</text><text class="tS3" x="265" y="466" text-anchor="middle">Day9-13 · 萌芽</text>
+    <rect x="355" y="432" width="120" height="48" rx="6" fill="#EAF3DE" stroke="#639922" stroke-width="0.5"/>
+    <text class="ts3" x="415" y="450" text-anchor="middle">新衣→储物间</text><text class="tS3" x="415" y="466" text-anchor="middle">Day20-25 · 成长</text>
+    <rect x="505" y="432" width="100" height="48" rx="6" fill="#639922" stroke="#3B6D11" stroke-width="0.5"/>
+    <text class="ts3" x="555" y="450" text-anchor="middle" fill="#fff">主动帮忙→长信</text><text class="tS3" x="555" y="466" text-anchor="middle" fill="#EAF3DE">Day32-38</text>
+    <rect x="615" y="436" width="50" height="40" rx="6" fill="#3B6D11" stroke="#27500A" stroke-width="0.5"/>
+    <text class="tn3" x="640" y="450" text-anchor="middle" dominant-baseline="central" fill="#fff">Day44</text><text class="tS3" x="640" y="464" text-anchor="middle" fill="#fff">最终</text>
+    <line x1="175" y1="456" x2="205" y2="456" stroke="#639922" stroke-width="0.5" marker-end="url(#arrow3)"/>
+    <line x1="325" y1="456" x2="355" y2="456" stroke="#639922" stroke-width="0.5" marker-end="url(#arrow3)"/>
+    <line x1="475" y1="456" x2="505" y2="456" stroke="#639922" stroke-width="0.5" marker-end="url(#arrow3)"/>
+    <line x1="605" y1="456" x2="615" y2="456" stroke="#639922" stroke-width="0.5"/>
+    <text class="tn3" x="40" y="512" fill="#085041">小林莉香</text><text class="tS3" x="40" y="526">女友</text><text class="tS3" x="40" y="540">纯爱线</text>
+    <rect x="55" y="502" width="120" height="48" rx="6" fill="#E1F5EE" stroke="#5DCAA5" stroke-width="0.5"/>
+    <text class="ts3" x="115" y="520" text-anchor="middle">视频→电话→追问</text><text class="tS3" x="115" y="536" text-anchor="middle">Day2-10 · 远方</text>
+    <rect x="205" y="502" width="120" height="48" rx="6" fill="#E1F5EE" stroke="#5DCAA5" stroke-width="0.5"/>
+    <text class="ts3" x="265" y="520" text-anchor="middle">深夜哭腔→想回来</text><text class="tS3" x="265" y="536" text-anchor="middle">Day14-18 · 裂痕</text>
+    <rect x="355" y="502" width="120" height="48" rx="6" fill="#E1F5EE" stroke="#5DCAA5" stroke-width="0.5"/>
+    <text class="ts3" x="415" y="520" text-anchor="middle">机票→匿名信恐慌</text><text class="tS3" x="415" y="536" text-anchor="middle">Day24-30 · 悬念</text>
+    <rect x="505" y="502" width="100" height="48" rx="6" fill="#5DCAA5" stroke="#1D9E75" stroke-width="0.5"/>
+    <text class="ts3" x="555" y="520" text-anchor="middle" fill="#fff">通牒→沉默→最后消息</text><text class="tS3" x="555" y="536" text-anchor="middle" fill="#E1F5EE">Day35-42</text>
+    <rect x="615" y="506" width="50" height="40" rx="6" fill="#1D9E75" stroke="#0F6E56" stroke-width="0.5"/>
+    <text class="tn3" x="640" y="520" text-anchor="middle" dominant-baseline="central" fill="#fff">Day42</text><text class="tS3" x="640" y="534" text-anchor="middle" fill="#fff">完结</text>
+    <line x1="175" y1="526" x2="205" y2="526" stroke="#5DCAA5" stroke-width="0.5" marker-end="url(#arrow3)"/>
+    <line x1="325" y1="526" x2="355" y2="526" stroke="#5DCAA5" stroke-width="0.5" marker-end="url(#arrow3)"/>
+    <line x1="475" y1="526" x2="505" y2="526" stroke="#5DCAA5" stroke-width="0.5" marker-end="url(#arrow3)"/>
+    <line x1="605" y1="526" x2="615" y2="526" stroke="#5DCAA5" stroke-width="0.5"/>
+    <rect x="30" y="570" width="620" height="130" rx="10" fill="#F1EFE8" stroke="#D3D1C7" stroke-width="0.5"/>
+    <text class="th3" x="50" y="592">故事线设计原则</text>
+    <text class="ts3" x="50" y="614">每个角色严格遵循四阶段递进结构，在60天内完成完整的情感弧线</text>
+    <text class="ts3" x="50" y="634">阶段四颜色加深 = 角色达到叙事高潮，选择决定结局走向</text>
+    <text class="ts3" x="50" y="654">完结日 = 该角色好感度事件全部结束的Day，之后不再有新事件</text>
+    <text class="ts3" x="50" y="676">未在此图展示的6位角色（黄鹂/神鸦/夜鸢/双雀/银鹮/诡鹀）同样遵循四阶段结构</text>
+    <text class="ts3" x="50" y="694">她们的完结日：黄鹂D42 | 神鸦D39 | 夜鸢D42 | 双雀D39 | 银鹮D40 | 诡鹀D41</text>
+  </svg>
+</div>
+
+<!-- ==================== Section 5: 交织关系流程图 ==================== -->
+<h2>五、角色交织关系流程图</h2>
+<p>下图展示各角色故事线如何在关键剧情节点交叉。每个节点标注了参与的角色（彩色标签），以及该节点关联的BE危险窗口。角色线从左至右随时间推进，虚线表示跨节点的角色暗线追踪。</p>
+
+<div class="chart-box">
+  <div class="chart-title">角色交织关系流程图</div>
+  <div class="chart-desc">关键剧情节点 × 角色交汇 × 结局导向</div>
+  <svg viewBox="0 0 680 860" width="100%" role="img">
+    <title>十二飞鸟角色交织关系流程图</title>
+    <defs>
+      <marker id="arrow4" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
+      <marker id="arrowSm4" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
+    </defs>
+    <style>.th4{font:500 14px sans-serif;fill:#2C2C2A}.ts4{font:12px sans-serif;fill:#5F5E5A}.tn4{font:500 12px sans-serif}.tS4{font:10px sans-serif;fill:#888780}.tag4{font:10px sans-serif;fill:#fff}</style>
+    <text class="th4" x="340" y="24" text-anchor="middle" font-size="15">角色交织关系流程图</text>
+    <text class="ts4" x="340" y="42" text-anchor="middle">关键剧情节点 × 角色交汇 × 结局导向</text>
+    <line x1="60" y1="70" x2="620" y2="70" stroke="#D3D1C7" stroke-width="1"/>
+    <text class="tS4" x="60" y="62" text-anchor="middle">Day 1</text><text class="tS4" x="200" y="62" text-anchor="middle">Day 10</text><text class="tS4" x="340" y="62" text-anchor="middle">Day 25</text><text class="tS4" x="480" y="62" text-anchor="middle">Day 38</text><text class="tS4" x="620" y="62" text-anchor="middle">Day 60</text>
+    <rect x="60" y="72" width="150" height="4" fill="#AFA9EC"/><rect x="215" y="72" width="220" height="4" fill="#5DCAA5"/><rect x="440" y="72" width="120" height="4" fill="#EF9F27"/><rect x="565" y="72" width="55" height="4" fill="#378ADD"/>
+    <rect x="50" y="92" width="140" height="56" rx="8" fill="#EEEDFE" stroke="#7F77DD" stroke-width="0.5"/>
+    <text class="tn4" x="120" y="108" text-anchor="middle">Day 1-2 潜入</text><text class="ts4" x="120" y="124" text-anchor="middle">白鹤考验 + 认识5人</text><text class="tS4" x="120" y="140" text-anchor="middle">BE01 死在温室</text>
+    <rect x="55" y="156" width="38" height="14" rx="3" fill="#D85A30"/><text class="tag4" x="74" y="166" text-anchor="middle">白鹤</text>
+    <rect x="97" y="156" width="38" height="14" rx="3" fill="#D85A30"/><text class="tag4" x="116" y="166" text-anchor="middle">早莺</text>
+    <rect x="139" y="156" width="38" height="14" rx="3" fill="#97C459"/><text class="tag4" x="158" y="166" text-anchor="middle">巢燕</text>
+    <path d="M120 174 L120 188" fill="none" stroke="#5F5E5A" stroke-width="0.5" marker-end="url(#arrowSm4)"/>
+    <rect x="50" y="192" width="140" height="56" rx="8" fill="#FAECE7" stroke="#D85A30" stroke-width="0.5"/>
+    <text class="tn4" x="120" y="208" text-anchor="middle">Day 4-8 危机启动</text><text class="ts4" x="120" y="224" text-anchor="middle">雏鹃登场 + 增田殉职</text><text class="tS4" x="120" y="240" text-anchor="middle">BE02~BE03 死亡窗口</text>
+    <rect x="55" y="256" width="38" height="14" rx="3" fill="#639922"/><text class="tag4" x="74" y="266" text-anchor="middle">雏鹃</text>
+    <rect x="97" y="256" width="38" height="14" rx="3" fill="#378ADD"/><text class="tag4" x="116" y="266" text-anchor="middle">增田</text>
+    <rect x="139" y="256" width="38" height="14" rx="3" fill="#378ADD"/><text class="tag4" x="158" y="266" text-anchor="middle">佐藤</text>
+    <path d="M120 274 L120 288" fill="none" stroke="#5F5E5A" stroke-width="0.5" marker-end="url(#arrowSm4)"/>
+    <rect x="50" y="292" width="140" height="56" rx="8" fill="#E1F5EE" stroke="#5DCAA5" stroke-width="0.5"/>
+    <text class="tn4" x="120" y="308" text-anchor="middle">Day 12-17 双线激活</text><text class="ts4" x="120" y="324" text-anchor="middle">青鹭疑踪 + 夜鸢交易</text><text class="tS4" x="120" y="340" text-anchor="middle">BE05~BE08 危险区</text>
+    <rect x="55" y="356" width="38" height="14" rx="3" fill="#ED93B1"/><text class="tag4" x="74" y="366" text-anchor="middle">青鹭</text>
+    <rect x="97" y="356" width="38" height="14" rx="3" fill="#888780"/><text class="tag4" x="116" y="366" text-anchor="middle">夜鸢</text>
+    <rect x="139" y="356" width="38" height="14" rx="3" fill="#BA7517"/><text class="tag4" x="158" y="366" text-anchor="middle">朱雀</text>
+    <path d="M190 320 L250 320" fill="none" stroke="#5F5E5A" stroke-width="0.5" stroke-dasharray="3,2"/>
+    <rect x="250" y="292" width="140" height="56" rx="8" fill="#E6F1FB" stroke="#378ADD" stroke-width="0.5"/>
+    <text class="tn4" x="320" y="308" text-anchor="middle">Day 19-20 汇流</text><text class="ts4" x="320" y="324" text-anchor="middle">第三死者 + 白鹤真账簿</text><text class="tS4" x="320" y="340" text-anchor="middle">杀人线 ∩ 毒品线 首次交汇</text>
+    <rect x="255" y="356" width="38" height="14" rx="3" fill="#D85A30"/><text class="tag4" x="274" y="366" text-anchor="middle">白鹤</text>
+    <rect x="297" y="356" width="38" height="14" rx="3" fill="#7F77DD"/><text class="tag4" x="316" y="366" text-anchor="middle">神鸦</text>
+    <rect x="339" y="356" width="38" height="14" rx="3" fill="#888780"/><text class="tag4" x="358" y="366" text-anchor="middle">夜鸢</text>
+    <path d="M320 374 L320 388" fill="none" stroke="#5F5E5A" stroke-width="0.5" marker-end="url(#arrowSm4)"/>
+    <rect x="250" y="392" width="140" height="56" rx="8" fill="#FAEEDA" stroke="#EF9F27" stroke-width="0.5"/>
+    <text class="tn4" x="320" y="408" text-anchor="middle">Day 26-31 升级</text><text class="ts4" x="320" y="424" text-anchor="middle">使者现身 + 佐藤被捕</text><text class="tS4" x="320" y="440" text-anchor="middle">主角失去后援 · 孤军</text>
+    <rect x="255" y="456" width="38" height="14" rx="3" fill="#D85A30"/><text class="tag4" x="274" y="466" text-anchor="middle">白鹤</text>
+    <rect x="297" y="456" width="38" height="14" rx="3" fill="#378ADD"/><text class="tag4" x="316" y="466" text-anchor="middle">佐藤</text>
+    <rect x="339" y="456" width="38" height="14" rx="3" fill="#97C459"/><text class="tag4" x="358" y="466" text-anchor="middle">巢燕</text>
+    <path d="M320 474 L320 488" fill="none" stroke="#5F5E5A" stroke-width="0.5" marker-end="url(#arrowSm4)"/>
+    <rect x="250" y="492" width="140" height="56" rx="8" fill="#FBEAF0" stroke="#ED93B1" stroke-width="0.5"/>
+    <text class="tn4" x="320" y="508" text-anchor="middle">Day 29-34 真相</text><text class="ts4" x="320" y="524" text-anchor="middle">青鹭回忆 + 记者登场</text><text class="tS4" x="320" y="540" text-anchor="middle">BE14~BE17 死亡区</text>
+    <rect x="255" y="556" width="38" height="14" rx="3" fill="#ED93B1"/><text class="tag4" x="274" y="566" text-anchor="middle">青鹭</text>
+    <rect x="297" y="556" width="38" height="14" rx="3" fill="#B4B2A9"/><text class="tag4" x="316" y="566" text-anchor="middle">江口</text>
+    <rect x="339" y="556" width="38" height="14" rx="3" fill="#D4537E"/><text class="tag4" x="358" y="566" text-anchor="middle">诡鹀</text>
+    <path d="M390 520 L450 520" fill="none" stroke="#5F5E5A" stroke-width="0.5" stroke-dasharray="3,2"/>
+    <rect x="450" y="492" width="160" height="56" rx="8" fill="#FCEBEB" stroke="#E24B4A" stroke-width="0.5"/>
+    <text class="tn4" x="530" y="508" text-anchor="middle">Day 38 台风夜 · 高潮</text><text class="ts4" x="530" y="524" text-anchor="middle">全员困于俱乐部</text><text class="tS4" x="530" y="540" text-anchor="middle">BE19死神 · 多线完结</text>
+    <rect x="455" y="556" width="34" height="14" rx="3" fill="#D85A30"/><text class="tag4" x="472" y="566" text-anchor="middle">白鹤</text>
+    <rect x="493" y="556" width="34" height="14" rx="3" fill="#ED93B1"/><text class="tag4" x="510" y="566" text-anchor="middle">青鹭</text>
+    <rect x="531" y="556" width="34" height="14" rx="3" fill="#639922"/><text class="tag4" x="548" y="566" text-anchor="middle">雏鹃</text>
+    <rect x="569" y="556" width="34" height="14" rx="3" fill="#5DCAA5"/><text class="tag4" x="586" y="566" text-anchor="middle">莉香</text>
+    <path d="M530 574 L530 588" fill="none" stroke="#5F5E5A" stroke-width="0.5" marker-end="url(#arrowSm4)"/>
+    <rect x="430" y="592" width="200" height="56" rx="8" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
+    <text class="tn4" x="530" y="608" text-anchor="middle">Day 41-43 收网 · 最终选择</text><text class="ts4" x="530" y="624" text-anchor="middle">村上对峙 + Interpol突袭</text><text class="tS4" x="530" y="640" text-anchor="middle">青鹭抉择 = 结局分叉起点</text>
+    <rect x="435" y="656" width="34" height="14" rx="3" fill="#ED93B1"/><text class="tag4" x="452" y="666" text-anchor="middle">青鹭</text>
+    <rect x="473" y="656" width="34" height="14" rx="3" fill="#BA7517"/><text class="tag4" x="490" y="666" text-anchor="middle">朱雀</text>
+    <rect x="511" y="656" width="34" height="14" rx="3" fill="#D85A30"/><text class="tag4" x="528" y="666" text-anchor="middle">白鹤</text>
+    <rect x="549" y="656" width="34" height="14" rx="3" fill="#D85A30"/><text class="tag4" x="566" y="666" text-anchor="middle">村上</text>
+    <rect x="587" y="656" width="34" height="14" rx="3" fill="#888780"/><text class="tag4" x="604" y="666" text-anchor="middle">夜鸢</text>
+    <path d="M530 674 L530 688" fill="none" stroke="#5F5E5A" stroke-width="0.5"/>
+    <text class="tS4" x="540" y="684">Day 45 路线分叉</text>
+    <path d="M530 690 L120 720" fill="none" stroke="#378ADD" stroke-width="0.5" stroke-dasharray="3,2"/>
+    <path d="M530 690 L340 720" fill="none" stroke="#1D9E75" stroke-width="0.5" stroke-dasharray="3,2"/>
+    <path d="M530 690 L530 720" fill="none" stroke="#D85A30" stroke-width="0.5" stroke-dasharray="3,2"/>
+    <path d="M530 690 L620 720" fill="none" stroke="#BA7517" stroke-width="0.5" stroke-dasharray="3,2"/>
+    <rect x="50" y="722" width="140" height="44" rx="8" fill="#E6F1FB" stroke="#378ADD" stroke-width="0.5"/>
+    <text class="tn4" x="120" y="738" text-anchor="middle" fill="#0C447C">END-A 法理正义</text><text class="ts4" x="120" y="754" text-anchor="middle">逮捕青鹭 + 扳倒村上</text>
+    <rect x="55" y="772" width="38" height="14" rx="3" fill="#ED93B1"/><text class="tag4" x="74" y="782" text-anchor="middle">青鹭</text>
+    <rect x="97" y="772" width="38" height="14" rx="3" fill="#378ADD"/><text class="tag4" x="116" y="782" text-anchor="middle">佐藤</text>
+    <rect x="270" y="722" width="140" height="44" rx="8" fill="#E1F5EE" stroke="#1D9E75" stroke-width="0.5"/>
+    <text class="tn4" x="340" y="738" text-anchor="middle" fill="#085041">END-B 堕落正义</text><text class="ts4" x="340" y="754" text-anchor="middle">与青鹭联手 + 伪证</text>
+    <rect x="275" y="772" width="38" height="14" rx="3" fill="#ED93B1"/><text class="tag4" x="294" y="782" text-anchor="middle">青鹭</text>
+    <rect x="317" y="772" width="38" height="14" rx="3" fill="#D85A30"/><text class="tag4" x="336" y="782" text-anchor="middle">白鹤</text>
+    <rect x="460" y="722" width="140" height="44" rx="8" fill="#FAECE7" stroke="#D85A30" stroke-width="0.5"/>
+    <text class="tn4" x="530" y="738" text-anchor="middle" fill="#4A1B0C">END-C 彻底沉沦</text><text class="ts4" x="530" y="754" text-anchor="middle">接受白鹤招揽</text>
+    <rect x="465" y="772" width="38" height="14" rx="3" fill="#D85A30"/><text class="tag4" x="484" y="782" text-anchor="middle">白鹤</text>
+    <rect x="507" y="772" width="38" height="14" rx="3" fill="#D85A30"/><text class="tag4" x="526" y="782" text-anchor="middle">村上</text>
+    <rect x="570" y="722" width="100" height="44" rx="8" fill="#FAEEDA" stroke="#BA7517" stroke-width="0.5"/>
+    <text class="tn4" x="620" y="738" text-anchor="middle" fill="#412402">END-D TE</text><text class="ts4" x="620" y="754" text-anchor="middle">全员 · 一网打尽</text>
+    <rect x="575" y="772" width="38" height="14" rx="3" fill="#BA7517"/><text class="tag4" x="594" y="782" text-anchor="middle">朱雀</text>
+    <rect x="617" y="772" width="38" height="14" rx="3" fill="#5DCAA5"/><text class="tag4" x="636" y="782" text-anchor="middle">全员</text>
+    <rect x="50" y="804" width="580" height="40" rx="8" fill="#FCEBEB" stroke="#E24B4A" stroke-width="0.5" stroke-dasharray="4,3"/>
+    <text class="tn4" x="340" y="820" text-anchor="middle" fill="#791F1F">23种BE散布于Day 2~45 · 由玩家选择触发 · 好感度仅影响语气</text>
+    <text class="tS4" x="340" y="836" text-anchor="middle">深层关系事件完成度 &lt; 阈值 = 解锁BE · 完成度达标 = 进入主线结局</text>
+    <path d="M120 148 Q 200 250 250 310" fill="none" stroke="#D85A30" stroke-width="0.5" stroke-dasharray="2,2" opacity="0.4"/>
+    <path d="M120 372 Q 200 440 250 510" fill="none" stroke="#ED93B1" stroke-width="0.5" stroke-dasharray="2,2" opacity="0.4"/>
+    <path d="M390 420 Q 430 470 450 510" fill="none" stroke="#97C459" stroke-width="0.5" stroke-dasharray="2,2" opacity="0.4"/>
+    <path d="M120 272 Q 200 350 250 410" fill="none" stroke="#378ADD" stroke-width="0.5" stroke-dasharray="2,2" opacity="0.4"/>
+  </svg>
+</div>
+
+<!-- ==================== Section 6: 关键交织节点解读 ==================== -->
+<h2>六、关键交织节点解读</h2>
+
+<div class="summary-box">
+  <h3>Day 19-20 汇流点 — 双线首次交汇</h3>
+  <p>第三名死者尸检曝光（杀人线）与白鹤展示真正账簿（毒品线）在同一天发生。主角第一次意识到：连环毒杀案的凶手正在利用"极乐泡沫"毒品作为武器——两条调查线在此刻合流。神鸦姬的预言"背叛者就在身边"为交汇增添了悬疑张力。</p>
+</div>
+
+<div class="summary-box">
+  <h3>Day 38 台风夜 — 全员高潮节点</h3>
+  <p>台风迫使全员困于俱乐部，这是叙事密度最高的一天。四条角色线同时完结（白鹤/青鹭/雏鹃/莉香），主角必须在孤立无援中做出关键判断。BE19"死神"在此触发——如果玩家在此前选择了孤立行为模式（不寻求协助、不与人共处），将在此日消失。这个节点的设计意图是：<b>关系的投入程度直接决定生存与否</b>。</p>
+</div>
+
+<div class="summary-box">
+  <h3>Day 43 青鹭抉择 — 结局分叉起点</h3>
+  <p>是否举报青鹭姬，是整个游戏最重要的单一选择。这个选择不是在"好"与"坏"之间，而是在<b>法理正义</b>与<b>实质正义</b>之间。举报她 = END-A（法理的正义）；与她合作 = END-B（堕落的正义）；拒绝青鹭但接受白鹤 = END-C（沉沦）；搜集全部线索并团结全员 = END-D（真结局）。END-D需要三重门控全部满足：正确选择 + 信任事件达标 + 证据链完整。</p>
+</div>
+
+<div class="summary-box">
+  <h3>角色暗线追踪 — 虚线连接的意义</h3>
+  <ul>
+    <li><b>白鹤线</b>（红色虚线）：从Day 1浴室考验 → Day 20真账簿 → Day 38台风夜长谈，白鹤始终是主角最大的对手，她的每一次"示好"都是试探</li>
+    <li><b>青鹭线</b>（粉色虚线）：从Day 7药箱 → Day 17实验 → Day 29回忆恩人 → Day 34协定，真凶的身份在四个阶段中逐步浮出</li>
+    <li><b>佐藤线</b>（蓝色虚线）：从Day 8接班 → Day 15倒计时 → Day 31被捕，警方后援的逐步丧失制造了持续升级的压力</li>
+    <li><b>巢燕线</b>（绿色虚线）：从Day 4母女偶遇 → Day 22小澪发烧 → Day 38转学决定，母亲的身份从软肋转化为叙事的情感锚</li>
+  </ul>
+</div>
+
+<!-- ==================== Section 7: BE系统说明 ==================== -->
+<h2>七、BE系统与角色交织的关系</h2>
+<p>23种BE不是随机死亡——每一种BE都关联着特定角色的信任事件完成度。这意味着<b>角色线的投入深度直接决定生存概率</b>。深层关系事件完成数低于阈值的角色，不会在关键时刻站出来支持你。</p>
+
+<table>
+  <thead>
+    <tr><th>BE编号</th><th>触发日</th><th>关联角色</th><th>触发条件</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>BE01</td><td>Day 2</td><td>白鹤姬</td><td>浴室中选"指尖再向前一寸"</td></tr>
+    <tr><td>BE04</td><td>Day 10-12</td><td>白鹤姬</td><td>连续三次顺从 + 未完成独立判断事件</td></tr>
+    <tr><td>BE06</td><td>Day 14-16</td><td>青鹭姬</td><td>当面质问 + 信任事件 &lt; 2</td></tr>
+    <tr><td>BE08</td><td>Day 17-19</td><td>夜鸢姬</td><td>索要黑皮书 + 未完成信任事件链</td></tr>
+    <tr><td>BE12</td><td>Day 25-27</td><td>朱雀姬</td><td>不信任Linda + 未完成联络事件链</td></tr>
+    <tr><td>BE13</td><td>Day 27-28</td><td>巢燕姬</td><td>不作为 + 未建立与小澪关系</td></tr>
+    <tr><td>BE19</td><td>Day 38-41</td><td>全体</td><td>孤立行为三条件 + 深层关系 &lt; 3</td></tr>
+    <tr><td>BE22</td><td>Day 44-45</td><td>全体</td><td>隐瞒信息 + 独善其身 + 深层关系 &lt; 5</td></tr>
+  </tbody>
+</table>
+<p style="font-size:12px;color:#888;margin-top:8px">仅列出与角色交织关系最密切的8个BE。完整23种BE详见设定文档。</p>
+
+<div class="footer">
+  <p>「十二飞鸟」叙事可视化总览 · 基于v4全剧本合集（18,481行）与60天完整版剧本规划 · 生成于2026-06-28</p>
+</div>
+
+</div>
+</body>
+</html>

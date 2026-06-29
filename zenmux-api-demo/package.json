@@ -1,0 +1,15 @@
+{
+  "name": "zenmux-api-demo",
+  "version": "1.0.0",
+  "description": "ZenMux API 调用示例项目",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "chat": "node src/chat.js",
+    "models": "node src/list-models.js"
+  },
+  "keywords": ["zenmux", "ai", "llm", "api"],
+  "license": "MIT",
+  "dependencies": {}
+}

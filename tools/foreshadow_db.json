@@ -1,0 +1,637 @@
+{
+  "foreshadows": [
+    {
+      "id": "FS001",
+      "description": "草莓布丁——早莺姬回忆男友以前的好",
+      "setup_day": 5,
+      "payoff_day": 14,
+      "status": "done"
+    },
+    {
+      "id": "FS002",
+      "description": "加蛋——拉面店育子点单习惯",
+      "setup_day": 4,
+      "payoff_day": 9,
+      "status": "done"
+    },
+    {
+      "id": "FS003",
+      "description": "增田的烧酒——增田在拉面店的习惯",
+      "setup_day": 1,
+      "payoff_day": 8,
+      "status": "done"
+    },
+    {
+      "id": "FS004",
+      "description": "墙纸鼓起——公寓壁纸意象贯穿",
+      "setup_day": 5,
+      "payoff_day": 6,
+      "status": "done"
+    },
+    {
+      "id": "FS005",
+      "description": "E-04药瓶——青鹭姬自制药物",
+      "setup_day": 7,
+      "payoff_day": 15,
+      "status": "setup"
+    },
+    {
+      "id": "FS006",
+      "description": "黑皮书——夜鸢姬的情报库",
+      "setup_day": 8,
+      "payoff_day": 42,
+      "status": "ongoing"
+    },
+    {
+      "id": "FS007",
+      "description": "Phoenix Coin——银鹮姬引荐的虚拟货币",
+      "setup_day": 3,
+      "payoff_day": 30,
+      "status": "ongoing"
+    },
+    {
+      "id": "FS008",
+      "description": "绳索理论——白鹤姬的核心哲学",
+      "setup_day": 10,
+      "payoff_day": 13,
+      "status": "done"
+    },
+    {
+      "id": "FS009",
+      "description": "佐藤5天倒计时",
+      "setup_day": 15,
+      "payoff_day": 20,
+      "status": "setup"
+    },
+    {
+      "id": "FS010",
+      "description": "莉香要买床垫",
+      "setup_day": 4,
+      "payoff_day": 4,
+      "status": "done"
+    },
+    {
+      "id": "FS011",
+      "description": "育子想吃味噌拉面加味玉",
+      "setup_day": 4,
+      "payoff_day": 5,
+      "status": "done"
+    },
+    {
+      "id": "FS012",
+      "description": "增田有重要情报当面给",
+      "setup_day": 7,
+      "payoff_day": 8,
+      "status": "done"
+    },
+    {
+      "id": "FS013",
+      "description": "青鹭姬的杀意宣言",
+      "setup_day": 15,
+      "payoff_day": 34,
+      "status": "ongoing"
+    },
+    {
+      "id": "FS014",
+      "description": "莉香想回来看主角",
+      "setup_day": 18,
+      "payoff_day": 42,
+      "status": "ongoing"
+    },
+    {
+      "id": "FS015",
+      "description": "神鸦姬预言「背叛者就在身边」",
+      "setup_day": 20,
+      "payoff_day": 30,
+      "status": "setup"
+    }
+  ],
+  "last_updated": "2026-06-28T09:58:52.942586",
+  "scan_results": [
+    {
+      "category": "promise",
+      "label": "提醒",
+      "content": "起就在练了",
+      "day": 10,
+      "source": "Day10剧本.txt"
+    },
+    {
+      "category": "clue",
+      "label": "遗留物",
+      "content": "昨晚香道的余味——沉香的木质基调沉在榻榻米的蔺草里",
+      "day": 10,
+      "source": "Day10剧本.txt"
+    },
+    {
+      "category": "reveal",
+      "label": "揭示",
+      "content": "更像某种定期的展示——让每个人都知道自己站在哪一格里",
+      "day": 10,
+      "source": "Day10剧本.txt"
+    },
+    {
+      "category": "clue",
+      "label": "遗留物",
+      "content": "雪鹤姬当年资助学生的部分档案",
+      "day": 11,
+      "source": "Day11剧本.txt"
+    },
+    {
+      "category": "promise",
+      "label": "提醒",
+      "content": "。妈妈没来我的生日",
+      "day": 13,
+      "source": "Day13剧本.txt"
+    },
+    {
+      "category": "clue",
+      "label": "疑点",
+      "content": "的肯定——你交了这张卷子",
+      "day": 13,
+      "source": "Day13剧本.txt"
+    },
+    {
+      "category": "clue",
+      "label": "遗留物",
+      "content": "一个淡紫色的唇印",
+      "day": 14,
+      "source": "Day14剧本.txt"
+    },
+    {
+      "category": "promise",
+      "label": "约定",
+      "content": "俱乐部里独自一人——增田不在了",
+      "day": 15,
+      "source": "Day15剧本.txt"
+    },
+    {
+      "category": "clue",
+      "label": "遗留物",
+      "content": "来的清洁剂瓶拿起来",
+      "day": 16,
+      "source": "Day16剧本.txt"
+    },
+    {
+      "category": "reveal",
+      "label": "揭示",
+      "content": "是在等自己",
+      "day": 16,
+      "source": "Day16剧本.txt"
+    },
+    {
+      "category": "clue",
+      "label": "遗留物",
+      "content": "痕迹——也很简单",
+      "day": 17,
+      "source": "Day17剧本.txt"
+    },
+    {
+      "category": "reveal",
+      "label": "揭示",
+      "content": "的排列方式",
+      "day": 17,
+      "source": "Day17剧本.txt"
+    },
+    {
+      "category": "promise",
+      "label": "提醒",
+      "content": "你说了这句",
+      "day": 18,
+      "source": "Day18剧本.txt"
+    },
+    {
+      "category": "reveal",
+      "label": "揭示",
+      "content": "就是我想多谢你上一次",
+      "day": 18,
+      "source": "Day18剧本.txt"
+    },
+    {
+      "category": "clue",
+      "label": "遗留物",
+      "content": "的肌肉记忆",
+      "day": 20,
+      "source": "Day20剧本.txt"
+    },
+    {
+      "category": "clue",
+      "label": "遗留物",
+      "content": "的护手霜——很便宜的玫瑰香精",
+      "day": 20,
+      "source": "Day20剧本.txt"
+    },
+    {
+      "category": "promise",
+      "label": "提醒",
+      "content": "的几行写在纸上",
+      "day": 21,
+      "source": "Day21剧本.txt"
+    },
+    {
+      "category": "clue",
+      "label": "遗留物",
+      "content": "。是因为——那是他仅有的",
+      "day": 21,
+      "source": "Day21剧本.txt"
+    },
+    {
+      "category": "clue",
+      "label": "遗留物",
+      "content": "的拖把水痕",
+      "day": 21,
+      "source": "Day21剧本.txt"
+    },
+    {
+      "category": "clue",
+      "label": "遗留物",
+      "content": "的便当盒上",
+      "day": 22,
+      "source": "Day22剧本.txt"
+    },
+    {
+      "category": "clue",
+      "label": "遗留物",
+      "content": "很深的月牙形印子",
+      "day": 23,
+      "source": "Day23剧本.txt"
+    },
+    {
+      "category": "promise",
+      "label": "提醒",
+      "content": "我上次寄给你的那个围巾吗",
+      "day": 24,
+      "source": "Day24剧本.txt"
+    },
+    {
+      "category": "clue",
+      "label": "遗留物",
+      "content": "航班号、日期、和她的名字",
+      "day": 24,
+      "source": "Day24剧本.txt"
+    },
+    {
+      "category": "promise",
+      "label": "提醒",
+      "content": "。确认自己做了这件事",
+      "day": 25,
+      "source": "Day25剧本.txt"
+    },
+    {
+      "category": "clue",
+      "label": "遗留物",
+      "content": "那一小截白色的塑料线",
+      "day": 25,
+      "source": "Day25剧本.txt"
+    },
+    {
+      "category": "clue",
+      "label": "遗留物",
+      "content": "一道细细的水痕",
+      "day": 26,
+      "source": "Day26剧本.txt"
+    },
+    {
+      "category": "clue",
+      "label": "遗留物",
+      "content": "时间戳：今晨六点零二分",
+      "day": 26,
+      "source": "Day26剧本.txt"
+    },
+    {
+      "category": "clue",
+      "label": "遗留物",
+      "content": "的香水味——甜得过分",
+      "day": 27,
+      "source": "Day27剧本.txt"
+    },
+    {
+      "category": "promise",
+      "label": "约定",
+      "content": "榻榻米上坐了很久",
+      "day": 28,
+      "source": "Day28剧本.txt"
+    },
+    {
+      "category": "promise",
+      "label": "约定",
+      "content": "我来接她",
+      "day": 28,
+      "source": "Day28剧本.txt"
+    },
+    {
+      "category": "promise",
+      "label": "提醒",
+      "content": "我是个骗子",
+      "day": 30,
+      "source": "Day30剧本.txt"
+    },
+    {
+      "category": "promise",
+      "label": "提醒",
+      "content": "看这本账簿",
+      "day": 30,
+      "source": "Day30剧本.txt"
+    },
+    {
+      "category": "promise",
+      "label": "约定",
+      "content": "地方警署做内勤",
+      "day": 31,
+      "source": "Day31剧本.txt"
+    },
+    {
+      "category": "clue",
+      "label": "遗留物",
+      "content": "全部经营记录",
+      "day": 31,
+      "source": "Day31剧本.txt"
+    },
+    {
+      "category": "promise",
+      "label": "承诺",
+      "content": "了雪鹤姬",
+      "day": 32,
+      "source": "Day32剧本.txt"
+    },
+    {
+      "category": "clue",
+      "label": "遗留物",
+      "content": "的笔记本",
+      "day": 34,
+      "source": "Day34剧本.txt"
+    },
+    {
+      "category": "clue",
+      "label": "疑点",
+      "content": "的东西——不是告别",
+      "day": 35,
+      "source": "Day35剧本.txt"
+    },
+    {
+      "category": "reveal",
+      "label": "揭示",
+      "content": "这么简单\"的笑",
+      "day": 35,
+      "source": "Day35剧本.txt"
+    },
+    {
+      "category": "promise",
+      "label": "提醒",
+      "content": "。抽屉里的红笔\"V-VIP\"和照片放在一起",
+      "day": 36,
+      "source": "Day36剧本.txt"
+    },
+    {
+      "category": "clue",
+      "label": "遗留物",
+      "content": "的两个浅浅的压痕——还在",
+      "day": 36,
+      "source": "Day36剧本.txt"
+    },
+    {
+      "category": "clue",
+      "label": "遗留物",
+      "content": "几个很淡的指印",
+      "day": 37,
+      "source": "Day37剧本.txt"
+    },
+    {
+      "category": "reveal",
+      "label": "揭示",
+      "content": "的位子上",
+      "day": 37,
+      "source": "Day37剧本.txt"
+    },
+    {
+      "category": "promise",
+      "label": "提醒",
+      "content": "。好像她经历过很多次台风",
+      "day": 38,
+      "source": "Day38剧本.txt"
+    },
+    {
+      "category": "clue",
+      "label": "遗留物",
+      "content": "一个很浅的湿痕",
+      "day": 38,
+      "source": "Day38剧本.txt"
+    },
+    {
+      "category": "clue",
+      "label": "疑点",
+      "content": "的香氛肯定有什么奇怪的物质",
+      "day": 3,
+      "source": "Day3剧本.txt"
+    },
+    {
+      "category": "clue",
+      "label": "疑点",
+      "content": "有香氛型致幻类物质",
+      "day": 3,
+      "source": "Day3剧本.txt"
+    },
+    {
+      "category": "clue",
+      "label": "暗示",
+      "content": "微微颤动",
+      "day": 3,
+      "source": "Day3剧本.txt"
+    },
+    {
+      "category": "clue",
+      "label": "遗留物",
+      "content": "那张黑色卡片的一角",
+      "day": 3,
+      "source": "Day3剧本.txt"
+    },
+    {
+      "category": "clue",
+      "label": "遗留物",
+      "content": "香烟和某种甜腻香水的混合气味",
+      "day": 3,
+      "source": "Day3剧本.txt"
+    },
+    {
+      "category": "reveal",
+      "label": "揭示",
+      "content": "这是我的工作之一——客人指名某位女孩但她刚好不在时",
+      "day": 3,
+      "source": "Day3剧本.txt"
+    },
+    {
+      "category": "reveal",
+      "label": "揭示",
+      "content": "还是我自己掏",
+      "day": 3,
+      "source": "Day3剧本.txt"
+    },
+    {
+      "category": "clue",
+      "label": "遗留物",
+      "content": "玫瑰香水的味道",
+      "day": 40,
+      "source": "Day40剧本.txt"
+    },
+    {
+      "category": "reveal",
+      "label": "揭示",
+      "content": "的位子上",
+      "day": 40,
+      "source": "Day40剧本.txt"
+    },
+    {
+      "category": "promise",
+      "label": "提醒",
+      "content": "你之前十六岁生日那天",
+      "day": 4,
+      "source": "Day4剧本.txt"
+    },
+    {
+      "category": "promise",
+      "label": "提醒",
+      "content": "注意身体！",
+      "day": 4,
+      "source": "Day4剧本.txt"
+    },
+    {
+      "category": "promise",
+      "label": "提醒",
+      "content": "去买床垫！",
+      "day": 4,
+      "source": "Day4剧本.txt"
+    },
+    {
+      "category": "clue",
+      "label": "暗示",
+      "content": "听到黄鹂姬那标志性的、元气十足的招呼声",
+      "day": 4,
+      "source": "Day4剧本.txt"
+    },
+    {
+      "category": "clue",
+      "label": "遗留物",
+      "content": "昨夜香槟和香烟的味道",
+      "day": 4,
+      "source": "Day4剧本.txt"
+    },
+    {
+      "category": "promise",
+      "label": "提醒",
+      "content": "你之前十六岁生日那天——我们规划好要去玩很多地方",
+      "day": 4,
+      "source": "Day4剧本_细化版.txt"
+    },
+    {
+      "category": "promise",
+      "label": "提醒",
+      "content": "。那天晚上的海风很大",
+      "day": 4,
+      "source": "Day4剧本_细化版.txt"
+    },
+    {
+      "category": "promise",
+      "label": "提醒",
+      "content": "注意身体！",
+      "day": 4,
+      "source": "Day4剧本_细化版.txt"
+    },
+    {
+      "category": "promise",
+      "label": "提醒",
+      "content": "去买床垫",
+      "day": 4,
+      "source": "Day4剧本_细化版.txt"
+    },
+    {
+      "category": "clue",
+      "label": "暗示",
+      "content": "听到黄鹂姬那元气十足的招呼声",
+      "day": 4,
+      "source": "Day4剧本_细化版.txt"
+    },
+    {
+      "category": "promise",
+      "label": "提醒",
+      "content": "我喜欢草莓味的布丁",
+      "day": 5,
+      "source": "Day5剧本.txt"
+    },
+    {
+      "category": "clue",
+      "label": "遗留物",
+      "content": "一个湿润的印记",
+      "day": 5,
+      "source": "Day5剧本.txt"
+    },
+    {
+      "category": "clue",
+      "label": "遗留物",
+      "content": "的自动发送程序：",
+      "day": 5,
+      "source": "Day5剧本.txt"
+    },
+    {
+      "category": "reveal",
+      "label": "揭示",
+      "content": "他明明还要兼职",
+      "day": 5,
+      "source": "Day5剧本.txt"
+    },
+    {
+      "category": "promise",
+      "label": "提醒",
+      "content": "她倒在那里",
+      "day": 6,
+      "source": "Day6剧本.txt"
+    },
+    {
+      "category": "promise",
+      "label": "提醒",
+      "content": "化妆镜上用口红写的那句话",
+      "day": 6,
+      "source": "Day6剧本.txt"
+    },
+    {
+      "category": "clue",
+      "label": "遗留物",
+      "content": "的雪茄味",
+      "day": 6,
+      "source": "Day6剧本.txt"
+    },
+    {
+      "category": "reveal",
+      "label": "揭示",
+      "content": "是不行的吧",
+      "day": 6,
+      "source": "Day6剧本.txt"
+    },
+    {
+      "category": "clue",
+      "label": "遗留物",
+      "content": "最后一组客人留下的香水味——很浓的花香调",
+      "day": 7,
+      "source": "Day7剧本.txt"
+    },
+    {
+      "category": "promise",
+      "label": "提醒",
+      "content": "刚才彩的位置——她的每一个动作仍然精确地避开了那个已经不存在的搭档",
+      "day": 8,
+      "source": "Day8剧本.txt"
+    },
+    {
+      "category": "clue",
+      "label": "遗留物",
+      "content": "一个很轻的指纹",
+      "day": 8,
+      "source": "Day8剧本.txt"
+    },
+    {
+      "category": "clue",
+      "label": "遗留物",
+      "content": "的最后痕迹",
+      "day": 9,
+      "source": "Day9剧本.txt"
+    }
+  ]
+}

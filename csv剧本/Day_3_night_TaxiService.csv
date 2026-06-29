@@ -1,0 +1,11 @@
+ID,Speaker,HeadProfile,CharLeft,CharMid,CharRight,Text,Background,BGM,Voice,Command,Note
+10130001,hide,hide,hide,hide,hide,我锁好门，正准备离开时，看见小野南梨站在巷口。,Club_outside_night,Unreal_Memory,,,
+10130002,hide,hide,hide,OnoNami_casual,hide,她已经换回了便装——简单的牛仔裤和T恤，戴着她的帽子，素颜。,Club_outside_night,,,,
+10130003,hide,hide,hide,OnoNami_casual,hide,在路灯下，她看起来比实际年龄更小，像个高中生。,Club_outside_night,,,,
+10130004,hide,hide,hide,OnoNami_casual,hide,她正在翻找钱包，脸色越来越苍白。,Club_outside_night,,,,
+10130005,hide,hide,hide,OnoNami_casual,hide,显然，钱包里的钱不够打车。,Club_outside_night,,,,
+10130006,hide,hide,hide,OnoNami_casual,hide,从这里到她住的街区，日本的出租车费用显然对她来说有些棘手。,Club_outside_night,,,,
+10130007,hide,hide,hide,OnoNami_casual,hide,而她手里的硬币和纸钞，看起来连一千円都不到。,Club_outside_night,,,,
+10130008,hide,hide,hide,OnoNami_casual,hide,此时显然已经没有地铁了，或许她只能去一些很差的住宿环境将就一下了……,Club_outside_night,,,,
+10130009,hide,hide,hide,OnoNami_casual,hide,夜风很冷，她又只穿了单薄的白T恤。,Club_outside_night,,,,
+10130010,hide,hide,hide,hide,hide,,Club_outside_night,,,"choice(帮她叫一辆出租车|loadScript(Day_3_night_TaxiService_1,10130101))&choice(保持沉默|loadScript(Day_3_night_TaxiService_2,10130201))",

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>「十二飞鸟」剧本核心剧情与分支流程图</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0d0d0d;color:#ccc;font-family:"Microsoft YaHei","PingFang SC",sans-serif;overflow-x:hidden}
+h1{text-align:center;padding:24px 0 8px;font-size:26px;color:#e8d5b7;letter-spacing:3px}
+.subtitle{text-align:center;font-size:13px;color:#887;padding-bottom:20px}
+.legend{display:flex;justify-content:center;gap:28px;padding:12px 0 24px;flex-wrap:wrap;font-size:12px}
+.legend span{padding:3px 12px;border-radius:3px}
+.leg-main{background:#2a4a3a;color:#9ec9a7} .leg-be{background:#5a2a2a;color:#e88} .leg-key{background:#4a3a2a;color:#da8}
+.leg-love{background:#3a2a4a;color:#c9a9e0} .leg-end{background:#1a3a5a;color:#8ac}
+.leg-li{background:#2a4a4a;color:#8cc}
+.container{max-width:1400px;margin:0 auto;padding:0 20px}
+.phase-title{font-size:15px;color:#bba888;padding:20px 0 8px 12px;border-left:3px solid #bba888;margin:32px 0 8px}
+.flow-row{display:flex;align-items:stretch;min-height:60px;margin:4px 0;position:relative}
+.day-box{width:64px;min-width:64px;background:#1a1a1a;border:1px solid #333;border-radius:6px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:13px;color:#e8d5b7;font-weight:bold;position:relative}
+.day-num{font-size:18px;line-height:1}
+.day-label{font-size:10px;color:#887;margin-top:2px}
+.events-area{flex:1;display:flex;flex-wrap:wrap;align-items:stretch;gap:3px;padding:2px 8px}
+.event-tag{padding:6px 10px;border-radius:4px;font-size:11px;line-height:1.4;display:flex;align-items:center;gap:4px;position:relative;white-space:nowrap}
+.evt-main{background:#1a2f20;border:1px solid #2a4a3a;color:#9ec9a7}
+.evt-love{background:#1f1a2e;border:1px solid #3a2a4a;color:#c9a9e0}
+.evt-key{background:#2f2418;border:1px solid #4a3a2a;color:#da8}
+.evt-be{background:#2f1a1a;border:1px solid #5a2a2a;color:#f88}
+.evt-li{background:#1a2a2f;border:1px solid #2a4a4a;color:#8cc}
+.evt-trans{background:#1a1a1a;border:1px solid #2a2a2a;color:#777}
+.evt-end{background:#0d1f2f;border:1px solid #305070;color:#8ac;font-weight:bold}
+.evt-branch{border:2px dashed #c9a9e0;background:#1a1a28}
+.dot{width:6px;height:6px;border-radius:50%;display:inline-block}
+.dot-main{background:#5a9e6f} .dot-love{background:#9e6fbf} .dot-key{background:#d4a843}
+.dot-be{background:#e05555} .dot-li{background:#5aafbf} .dot-trans{background:#555}
+.branch-line{display:flex;align-items:flex-start;gap:6px;margin:8px 0 8px 72px;padding:8px 12px;border-left:2px solid #4a3a2a;background:#111;border-radius:0 6px 6px 0;font-size:12px}
+.branch-line .br-tag{padding:2px 8px;border-radius:3px;font-size:11px;font-weight:bold}
+.br-be{background:#5a1a1a;color:#f88} .br-end{background:#1a3a5a;color:#8ac}
+.be-list{padding:4px 0 4px 72px;font-size:11px;color:#a77;display:flex;flex-wrap:wrap;gap:8px}
+.be-list span{background:#2a1414;padding:2px 8px;border-radius:3px;border:1px solid #4a2020}
+.ending-row{display:flex;gap:12px;padding:8px 0 8px 72px;flex-wrap:wrap}
+.end-card{flex:1;min-width:200px;max-width:320px;background:#0d1f2f;border:2px solid #305070;border-radius:8px;padding:14px}
+.end-card h3{color:#8ac;font-size:15px;margin-bottom:6px}
+.end-card p{font-size:11px;color:#9ab;line-height:1.5;margin:2px 0}
+.end-card .cond{color:#da8;font-size:10px;margin-top:4px}
+.lilac-line{display:flex;align-items:center;gap:8px;padding:4px 0 4px 72px;font-size:11px;color:#8cc}
+.lilac-dot{width:8px;height:8px;border-radius:50%;background:#5aafbf}
+@media(max-width:800px){.event-tag{font-size:10px;padding:4px 6px}.day-box{width:48px;min-width:48px}}
+</style>
+</head>
+<body>
+
+<h1>🕊️ 「十二飞鸟」剧本核心剧情与分支流程图</h1>
+<div class="subtitle">大阪·2025 —— 卧底警察黑羽哲也 × 十二位"飞鸟" × 60天潜入</div>
+
+<div class="legend">
+<span class="leg-main">■ 主线事件</span>
+<span class="leg-love">■ 好感度事件</span>
+<span class="leg-key">■ 关键节点</span>
+<span class="leg-be">■ BE触发窗口</span>
+<span class="leg-li">■ 莉香线</span>
+<span class="leg-end">■ 结局</span>
+</div>
+
+<div class="container">
+
+<!-- ========== 第一幕：潜入 ========== -->
+<div class="phase-title">第一幕「潜入」Day 1~20 — 建立信任，收集证据</div>
+
+<div class="flow-row">
+<div class="day-box"><span class="day-num">1</span><span class="day-label">潜入之夜</span></div>
+<div class="events-area">
+<span class="event-tag evt-key"><span class="dot dot-key"></span>首次进入十二飞鸟</span>
+<span class="event-tag evt-love"><span class="dot dot-love"></span>白鹤姬★1</span>
+<span class="event-tag evt-love"><span class="dot dot-love"></span>早莺姬★1 巢燕姬★1</span>
+<span class="event-tag evt-love"><span class="dot dot-love"></span>青鹭姬★1 神鸦姬★1</span>
+<span class="event-tag evt-key"><span class="dot dot-key"></span>增田课长交付任务</span>
+</div>
+</div>
+
+<div class="flow-row">
+<div class="day-box"><span class="day-num">2</span><span class="day-label">氤氲陷阱</span></div>
+<div class="events-area">
+<span class="event-tag evt-li"><span class="dot dot-li"></span>莉香★1 视频通话</span>
+<span class="event-tag evt-love"><span class="dot dot-love"></span>双雀/黄鹂/夜鸢/朱雀★1</span>
+<span class="event-tag evt-be"><span class="dot dot-be"></span>☠ BE01窗口</span>
+<span class="event-tag evt-key"><span class="dot dot-key"></span>白鹤浴室考验·选择指尖/收手</span>
+</div>
+</div>
+<div class="branch-line"><span class="br-tag br-be">BE01「死在温室」</span> 指尖再向前一寸 → 白鹤姬翻脸 → 被暴打致残 → 五年后后勤科仓库</div>
+
+<div class="flow-row">
+<div class="day-box"><span class="day-num">3</span><span class="day-label">蝴蝶结</span></div>
+<div class="events-area">
+<span class="event-tag evt-main"><span class="dot dot-main"></span>白鹤香氛异常·紧急汇报增田</span>
+<span class="event-tag evt-love"><span class="dot dot-love"></span>银鹮姬★1 诡鹀姬★1</span>
+<span class="event-tag evt-love"><span class="dot dot-love"></span>早莺姬★2 蝴蝶结寻找</span>
+</div>
+</div>
+
+<div class="flow-row">
+<div class="day-box"><span class="day-num">4</span><span class="day-label">十六岁</span></div>
+<div class="events-area">
+<span class="event-tag evt-li"><span class="dot dot-li"></span>莉香★2 十六岁回忆</span>
+<span class="event-tag evt-love"><span class="dot dot-love"></span>巢燕姬★2 寝具店偶遇</span>
+<span class="event-tag evt-key"><span class="dot dot-key"></span>雏鹃姬★1 登场</span>
+</div>
+</div>
+
+<div class="flow-row">
+<div class="day-box"><span class="day-num">5</span><span class="day-label">受伤早莺</span></div>
+<div class="events-area">
+<span class="event-tag evt-love"><span class="dot dot-love"></span>雏鹃姬★3 拉面之约</span>
+<span class="event-tag evt-love"><span class="dot dot-love"></span>早莺姬★4 手臂淤青</span>
+<span class="event-tag evt-love"><span class="dot dot-love"></span>神鸦姬★2 倒吊人</span>
+<span class="event-tag evt-be"><span class="dot dot-be"></span>☠ BE02窗口</span>
+</div>
+</div>
+<div class="branch-line"><span class="br-tag br-be">BE02「早莺折翼」</span> 劝南梨报警 → 男友报复 → 南梨死亡</div>
+
+<div class="flow-row">
+<div class="day-box"><span class="day-num">6</span><span class="day-label">燃烧羽毛</span></div>
+<div class="events-area">
+<span class="event-tag evt-love"><span class="dot dot-love"></span>黄鹂姬★1 天台舞步</span>
+<span class="event-tag evt-love"><span class="dot dot-love"></span>黄鹂姬★2 暗面·卸下笑容</span>
+</div>
+</div>
+
+<div class="flow-row">
+<div class="day-box"><span class="day-num">7</span><span class="day-label">影子裂缝</span></div>
+<div class="events-area">
+<span class="event-tag evt-key"><span class="dot dot-key"></span>增田说有"重要情报"</span>
+<span class="event-tag evt-love"><span class="dot dot-love"></span>巢燕姬★3 青鹭姬★2</span>
+<span class="event-tag evt-be"><span class="dot dot-be"></span>☠ BE03窗口</span>
+</div>
+</div>
+
+<div class="flow-row">
+<div class="day-box"><span class="day-num">8</span><span class="day-label">暗夜交易</span></div>
+<div class="events-area">
+<span class="event-tag evt-key"><span class="dot dot-key"></span>💀 增田死于国道车祸</span>
+<span class="event-tag evt-love"><span class="dot dot-love"></span>双雀姬★2 夜鸢姬★1</span>
+<span class="event-tag evt-key"><span class="dot dot-key"></span>佐藤接班新联络人</span>
+</div>
+</div>
+
+<div class="flow-row">
+<div class="day-box"><span class="day-num">9</span><span class="day-label">雏鸟来信</span></div>
+<div class="events-area">
+<span class="event-tag evt-love"><span class="dot dot-love"></span>雏鹃姬★4 育子的信</span>
+<span class="event-tag evt-love"><span class="dot dot-love"></span>银鹮姬★2 Phoenix Coin</span>
+<span class="event-tag evt-love"><span class="dot dot-love"></span>白鹤姬★4 香道</span>
+</div>
+</div>
+
+<div class="flow-row">
+<div class="day-box"><span class="day-num">10</span><span class="day-label">镜中陌生人</span></div>
+<div class="events-area">
+<span class="event-tag evt-li"><span class="dot dot-li"></span>莉香★3 追问不安</span>
+<span class="event-tag evt-love"><span class="dot dot-love"></span>诡鹀姬★2 模仿秀</span>
+<span class="event-tag evt-love"><span class="dot dot-love"></span>白鹤姬★5 "绳索理论"</span>
+<span class="event-tag evt-be"><span class="dot dot-be"></span>☠ BE04窗口</span>
+</div>
+</div>
+
+<div class="flow-row">
+<div class="day-box"><span class="day-num">11~14</span><span class="day-label">加深阶段</span></div>
+<div class="events-area">
+<span class="event-tag evt-love"><span class="dot dot-love"></span>药妆店撞见·青鹭★4</span>
+<span class="event-tag evt-love"><span class="dot dot-love"></span>朱雀密会·U盘交换★2</span>
+<span class="event-tag evt-love"><span class="dot dot-love"></span>雏鹃学化妆★5</span>
+<span class="event-tag evt-love"><span class="dot dot-love"></span>小澪生日·巢燕★5</span>
+<span class="event-tag evt-li"><span class="dot dot-li"></span>莉香★4 深夜来电</span>
+<span class="event-tag evt-be"><span class="dot dot-be"></span>☠ BE05~06</span>
+</div>
+</div>
+
+<div class="flow-row">
+<div class="day-box"><span class="day-num">15</span><span class="day-label">第一声枪响</span></div>
+<div class="events-area">
+<span class="event-tag evt-key"><span class="dot dot-key"></span>佐藤最后通牒·5天倒计时</span>
+<span class="event-tag evt-love"><span class="dot dot-love"></span>银鹮姬★3 空白支票</span>
+<span class="event-tag evt-key"><span class="dot dot-key"></span>黑卡客人·警方高层</span>
+<span class="event-tag evt-love"><span class="dot dot-love"></span>青鹭姬★5 流露杀意</span>
+</div>
+</div>
+
+<div class="flow-row">
+<div class="day-box"><span class="day-num">16~20</span><span class="day-label">裂痕扩散</span></div>
+<div class="events-area">
+<span class="event-tag evt-love"><span class="dot dot-love"></span>双雀独白·瞳首次开口★4</span>
+<span class="event-tag evt-love"><span class="dot dot-love"></span>黄鹂旧照·偶像往事★4</span>
+<span class="event-tag evt-love"><span class="dot dot-love"></span>朱雀坦白·我是卧底★4</span>
+<span class="event-tag evt-key"><span class="dot dot-key"></span>真正账簿·白鹤追问立场★7</span>
+<span class="event-tag evt-love"><span class="dot dot-love"></span>神鸦预言·"背叛者就在身边"★4</span>
+<span class="event-tag evt-be"><span class="dot dot-be"></span>☠ BE07~10</span>
+</div>
+</div>
+
+<!-- ========== 第二幕：迷局 ========== -->
+<div class="phase-title">第二幕「迷局」Day 21~40 — 真相浮现，信任与背叛</div>
+
+<div class="flow-row">
+<div class="day-box"><span class="day-num">21</span><span class="day-label">账簿秘密</span></div>
+<div class="events-area">
+<span class="event-tag evt-key"><span class="dot dot-key"></span>彻夜研究·发现异常资金流</span>
+<span class="event-tag evt-love"><span class="dot dot-love"></span>早莺★7 围巾·青鹭★7 毒理</span>
+<span class="event-tag evt-key"><span class="dot dot-key"></span>凤凰卡到手·白鹤办公室</span>
+</div>
+</div>
+
+<div class="flow-row">
+<div class="day-box"><span class="day-num">22~24</span><span class="day-label">暗流涌动</span></div>
+<div class="events-area">
+<span class="event-tag evt-love"><span class="dot dot-love"></span>黄鹂★4 巢燕★7 白鹤解围★8</span>
+<span class="event-tag evt-love"><span class="dot dot-love"></span>诡鹀假面★4 瞳噩梦★5</span>
+<span class="event-tag evt-li"><span class="dot dot-li"></span>莉香★6 机票截图</span>
+<span class="event-tag evt-be"><span class="dot dot-be"></span>☠ BE11~12</span>
+</div>
+</div>
+
+<div class="flow-row">
+<div class="day-box"><span class="day-num">25</span><span class="day-label">女王缺席</span></div>
+<div class="events-area">
+<span class="event-tag evt-key"><span class="dot dot-key"></span>佐藤失联·18小时无消息</span>
+<span class="event-tag evt-love"><span class="dot dot-love"></span>雏鹃新衣★8 银鹮债务★5</span>
+<span class="event-tag evt-love"><span class="dot dot-love"></span>早莺动摇★8</span>
+<span class="event-tag evt-key"><span class="dot dot-key"></span>代理经理·BE12越权窗口</span>
+</div>
+</div>
+
+<div class="flow-row">
+<div class="day-box"><span class="day-num">26~29</span><span class="day-label">风暴前夕</span></div>
+<div class="events-area">
+<span class="event-tag evt-key"><span class="dot dot-key"></span>雪代带回"使者"·新规矩</span>
+<span class="event-tag evt-love"><span class="dot dot-love"></span>神鸦★5 青鹭★8 夜鸢★5</span>
+<span class="event-tag evt-key"><span class="dot dot-key"></span>跟踪使者·拍摄车牌 #27</span>
+<span class="event-tag evt-love"><span class="dot dot-love"></span>巢燕恐惧★8 账簿破译</span>
+<span class="event-tag evt-be"><span class="dot dot-be"></span>☠ BE13~14</span>
+</div>
+</div>
+
+<div class="flow-row">
+<div class="day-box"><span class="day-num">30</span><span class="day-label">镜厅</span></div>
+<div class="events-area">
+<span class="event-tag evt-li"><span class="dot dot-li"></span>莉香★7 恐慌·"你是不是出事了"</span>
+<span class="event-tag evt-key"><span class="dot dot-key"></span>银鹮坦白Phoenix Coin全部</span>
+<span class="event-tag evt-love"><span class="dot dot-love"></span>白鹤天台★9 十九岁照片</span>
+<span class="event-tag evt-key"><span class="dot dot-key"></span>佐藤超36小时完全无消息</span>
+<span class="event-tag evt-be"><span class="dot dot-be"></span>☠ BE15「归国」窗口</span>
+</div>
+</div>
+
+<div class="flow-row">
+<div class="day-box"><span class="day-num">31~34</span><span class="day-label">暗网收紧</span></div>
+<div class="events-area">
+<span class="event-tag evt-love"><span class="dot dot-love"></span>全员好感事件推进★8~9</span>
+<span class="event-tag evt-key"><span class="dot dot-key"></span>证据分派·三路汇合 #33</span>
+<span class="event-tag evt-main"><span class="dot dot-main"></span>交叉比对死者名单·满月规律</span>
+</div>
+</div>
+
+<div class="flow-row">
+<div class="day-box"><span class="day-num">35</span><span class="day-label">暴风雨前</span></div>
+<div class="events-area">
+<span class="event-tag evt-li"><span class="dot dot-li"></span>莉香★8 通牒·"不退机票"</span>
+<span class="event-tag evt-love"><span class="dot dot-love"></span>银鹮出路★7 诡鹀模仿★6</span>
+<span class="event-tag evt-key"><span class="dot dot-key"></span>村上接触·佐藤被抓</span>
+<span class="event-tag evt-key"><span class="dot dot-key"></span>黑田议员·沉默的报价</span>
+</div>
+</div>
+
+<div class="flow-row">
+<div class="day-box"><span class="day-num">36~37</span><span class="day-label">暗流·最后通牒</span></div>
+<div class="events-area">
+<span class="event-tag evt-love"><span class="dot dot-love"></span>早莺诀别★10 欢送会</span>
+<span class="event-tag evt-key"><span class="dot dot-key"></span>朱雀坦白·Interpol身份★6</span>
+<span class="event-tag evt-key"><span class="dot dot-key"></span>⚡使者再来·"多余的人要走"</span>
+<span class="event-tag evt-love"><span class="dot dot-love"></span>黄鹂宣言·"说是我"</span>
+</div>
+</div>
+
+<div class="flow-row">
+<div class="day-box"><span class="day-num">38</span><span class="day-label">台风夜</span></div>
+<div class="events-area">
+<span class="event-tag evt-love"><span class="dot dot-love"></span>雏鹃信★10 青鹭准备★11</span>
+<span class="event-tag evt-key"><span class="dot dot-key"></span>🔥白鹤长谈·"我杀过人"★10</span>
+<span class="event-tag evt-love"><span class="dot dot-love"></span>雏鹃告白·"我想给你"★11</span>
+<span class="event-tag evt-li"><span class="dot dot-li"></span>莉香★9 7个未接来电</span>
+</div>
+</div>
+
+<div class="flow-row">
+<div class="day-box"><span class="day-num">39~40</span><span class="day-label">台风眼·雨后</span></div>
+<div class="events-area">
+<span class="event-tag evt-love"><span class="dot dot-love"></span>双雀往事★8 神鸦真心话★7</span>
+<span class="event-tag evt-key"><span class="dot dot-key"></span>⚡雪代·"规则会变"+倒计时</span>
+<span class="event-tag evt-love"><span class="dot dot-love"></span>巢燕决定★10 银鹮告别★8</span>
+<span class="event-tag evt-key"><span class="dot dot-key"></span>恢复营业·雨窗前亲密</span>
+</div>
+</div>
+
+<!-- ========== 第三幕：终幕 ========== -->
+<div class="phase-title">第三幕「终幕」Day 41~53 — 晚宴倒计时，十二飞鸟集结</div>
+
+<div class="flow-row">
+<div class="day-box"><span class="day-num">41</span><span class="day-label">请帖</span></div>
+<div class="events-area">
+<span class="event-tag evt-key"><span class="dot dot-key"></span>雪代监督请帖·"一个都不能少"</span>
+<span class="event-tag evt-key"><span class="dot dot-key"></span>夜鸢密报·百亿交易</span>
+<span class="event-tag evt-key"><span class="dot dot-key"></span>Linda部署间谍网</span>
+<span class="event-tag evt-key"><span class="dot dot-key"></span>座位图·黑羽暗藏盲区分析</span>
+</div>
+</div>
+
+<div class="flow-row">
+<div class="day-box"><span class="day-num">42</span><span class="day-label">白无垢</span></div>
+<div class="events-area">
+<span class="event-tag evt-love"><span class="dot dot-love"></span>雪代试穿改制白无垢·"我杀过人"</span>
+<span class="event-tag evt-love"><span class="dot dot-love"></span>育子送茶·羽毛发饰传承</span>
+<span class="event-tag evt-love"><span class="dot dot-love"></span>最后一夜·全员群像</span>
+</div>
+</div>
+
+<div class="flow-row">
+<div class="day-box"><span class="day-num">43</span><span class="day-label">青鹭</span></div>
+<div class="events-area">
+<span class="event-tag evt-love"><span class="dot dot-love"></span>星野葵交付镇静剂·"替法律做的"</span>
+<span class="event-tag evt-key"><span class="dot dot-key"></span>⚡她逼问黑羽·"不能再看了"</span>
+</div>
+</div>
+
+<div class="flow-row">
+<div class="day-box"><span class="day-num">44</span><span class="day-label">朱雀</span></div>
+<div class="events-area">
+<span class="event-tag evt-love"><span class="dot dot-love"></span>Linda后巷部署·六条撤退路线</span>
+<span class="event-tag evt-love"><span class="dot dot-love"></span>弟弟死于毒品的创伤独白</span>
+</div>
+</div>
+
+<div class="flow-row">
+<div class="day-box"><span class="day-num">45</span><span class="day-label">双雀</span></div>
+<div class="events-area">
+<span class="event-tag evt-love"><span class="dot dot-love"></span>彩&瞳勘撤离路线·马戏团往事</span>
+<span class="event-tag evt-love"><span class="dot dot-love"></span>瞳首次开口说完整句子</span>
+</div>
+</div>
+
+<div class="flow-row">
+<div class="day-box"><span class="day-num">46</span><span class="day-label">黄鹂</span></div>
+<div class="events-area">
+<span class="event-tag evt-love"><span class="dot dot-love"></span>夏实弹唱出道曲「光」</span>
+<span class="event-tag evt-love"><span class="dot dot-love"></span>写遗书→撕掉·"不需要了"</span>
+</div>
+</div>
+
+<div class="flow-row">
+<div class="day-box"><span class="day-num">47</span><span class="day-label">夜鸢</span></div>
+<div class="events-area">
+<span class="event-tag evt-love"><span class="dot dot-love"></span>蔷薇撕黑皮书最后三页·六年证据</span>
+<span class="event-tag evt-key"><span class="dot dot-key"></span>全员站队统计·END条件判定</span>
+<span class="event-tag evt-li"><span class="dot dot-li"></span>莉香号码·"大后天打个完整的句子"</span>
+</div>
+</div>
+
+<div class="flow-row">
+<div class="day-box"><span class="day-num">48</span><span class="day-label">终章前夜</span></div>
+<div class="events-area">
+<span class="event-tag evt-love"><span class="dot dot-love"></span>育子重排座位</span>
+<span class="event-tag evt-love"><span class="dot dot-love"></span>紫的最后占卜</span>
+<span class="event-tag evt-love"><span class="dot dot-love"></span>景子的电话·雪代摸椅子</span>
+</div>
+</div>
+
+<div class="flow-row">
+<div class="day-box"><span class="day-num">49~52</span><span class="day-label">最后准备</span></div>
+<div class="events-area">
+<span class="event-tag evt-love"><span class="dot dot-love"></span>诡鹀做面具·巢燕练换弹</span>
+<span class="event-tag evt-love"><span class="dot dot-love"></span>雪代茶室·账簿最后空白页</span>
+<span class="event-tag evt-main"><span class="dot dot-main"></span>逐一确认·全员表态</span>
+<span class="event-tag evt-li"><span class="dot dot-li"></span>莉香最后短信·"考完给你电话"</span>
+</div>
+</div>
+
+<!-- Day 53 Climax + Branching -->
+<div class="flow-row">
+<div class="day-box" style="background:#1a1a30;border-color:#305070"><span class="day-num" style="color:#8ac">53</span><span class="day-label">极乐之夜</span></div>
+<div class="events-area">
+<span class="event-tag evt-key"><span class="dot dot-key"></span>七轮连环·12飞鸟作战</span>
+<span class="event-tag evt-key"><span class="dot dot-key"></span>⚡黑羽第5条线·触发Interpol信号</span>
+<span class="event-tag evt-key"><span class="dot dot-key"></span>录音带落下·雪代站起来</span>
+<span class="event-tag evt-key"><span class="dot dot-key"></span>枪声·黑羽闪避·雪代0.5秒开枪</span>
+<span class="event-tag evt-key"><span class="dot dot-key"></span>雪代弃座·"这把椅子我不坐了"</span>
+</div>
+</div>
+
+<!-- ENDING BRANCHES -->
+<div class="phase-title">📌 主线结局分支 — 基于好感度累积判定</div>
+
+<div style="display:flex;gap:16px;padding:8px 0 8px 72px;flex-wrap:wrap">
+
+<div class="end-card">
+<h3>END-A「法理的正义」</h3>
+<p>雪代好感＜8 · 她不站到主角这边</p>
+<p>雪代在自己的椅子上做自己的选择。青鹭的药物证据、朱雀的Interpol信号缺一不可。法理获胜，但代价惨重。</p>
+<p class="cond">条件：雪代★＜8 或关键角色★＜8</p>
+</div>
+
+<div class="end-card">
+<h3>END-B「堕落的正义」</h3>
+<p>雪代≥8 但关键战力不足</p>
+<p>少了一个关键的人——青鹭或朱雀低于8。证据链不完整。法理走不通，只能走别的路。</p>
+<p class="cond">条件：雪代★≥8 但青鹭/朱雀★＜8</p>
+</div>
+
+<div class="end-card" style="border-color:#8ac">
+<h3>END-C「极乐之夜」✨真结局</h3>
+<p>十二飞鸟真正地飞起来。聚在一起。像一把伞。</p>
+<p>雪代在0.5秒内放弃二十一年的野心。黑羽按下Interpol信号。所有女孩活下来。晨光中莉香来电——"还在吗""还在"。</p>
+<p class="cond">条件：雪代★≥10 + 至少7人★≥8</p>
+</div>
+
+<div class="end-card">
+<h3>END-D「彻底的沉沦」</h3>
+<p>战力崩溃 · 全员低于阈值</p>
+<p>BE18「崩盘」。人数不够。战力不够。整个计划塌掉。像房子少了一半的柱子。</p>
+<p class="cond">条件：≥4人好感＜6</p>
+</div>
+</div>
+
+<!-- BE Summary -->
+<div class="phase-title">⚠️ 中途死亡结局 (Bad End) 窗口一览</div>
+<div class="be-list">
+<span>☠ BE01 D2 死在温室</span><span>☠ BE02 D5 早莺折翼</span>
+<span>☠ BE03 D7-9 被拔除的钉子</span><span>☠ BE04 D10-12 白鹤的囚笼</span>
+<span>☠ BE05 D11-13 暴走</span><span>☠ BE06 D14-16 毒蛇的初吻</span>
+<span>☠ BE07 D16 双雀坠地</span><span>☠ BE08 D17-18 坠落</span>
+<span>☠ BE09 D19-22 社死</span><span>☠ BE10 D20 镜中人</span>
+<span>☠ BE11 D23 火刑</span><span>☠ BE12 D25 越权</span>
+<span>☠ BE13 D26-27 渐冻</span><span>☠ BE14 D28-29 暴露</span>
+<span>☠ BE15 D30 归国</span><span>☠ BE16 D31-33 背叛者</span>
+<span>☠ BE17 D34-36 围猎</span><span>☠ BE18 D38-48 崩盘</span>
+<span>☠ BE19 D38 台风</span><span>☠ BE20 D41-45 暴露</span>
+<span>☠ BE21 D46-50 孤军</span><span>☠ BE22 D51-53 最后一枪</span>
+</div>
+
+<!-- 莉香线 -->
+<div class="phase-title">💙 小林莉香 异国恋平行线</div>
+<div class="lilac-line"><span class="lilac-dot"></span> D1 设定引入 → D2 ★1 视频通话 → D3 ★2 未接来电 → D4 ★2 十六岁回忆 → D10 ★3 追问不安</div>
+<div class="lilac-line"><span class="lilac-dot"></span> D14 ★4 深夜哭着来电 → D18 ★5 视频·查机票 → D21 图书馆照片 → D24 ★6 机票截图</div>
+<div class="lilac-line"><span class="lilac-dot"></span> D30 ★7 恐慌·有人拍黑羽照片 → D35 ★8 通牒·"不退机票"</div>
+<div class="lilac-line"><span class="lilac-dot" style="background:#f88"></span> D38 ★9 台风夜7个未接来电·通信中断 ← 最后情绪高峰</div>
+<div class="lilac-line"><span class="lilac-dot" style="background:#da8"></span> D39 台风后回看未接 → D47 "大后天打个完整的句子"</div>
+<div class="lilac-line"><span class="lilac-dot" style="background:#8ac"></span> D53 ★11 END-C终局·"还在吗""还在"</div>
+<div class="lilac-line" style="color:#8ac;font-weight:bold"><span class="lilac-dot" style="background:#8ac"></span> 🏁 莉香专属结局「关西机场」·两年后·"留下来"</div>
+
+<!-- Phase Map -->
+<div class="phase-title">📐 三幕结构 + 好感度阶段</div>
+<div style="padding:8px 0 8px 12px;display:flex;gap:4px;flex-wrap:wrap">
+<div style="flex:1;min-width:180px;background:#0d1f0d;border:1px solid #2a4a2a;border-radius:6px;padding:12px">
+<h4 style="color:#9ec9a7;font-size:13px">第一幕「潜入」D1-20</h4>
+<p style="font-size:11px;color:#aaa;line-height:1.6">建立信任·收集证据<br>阶段一(D1-10)初识<br>阶段二(D11-20)加深<br>关键：增田之死·佐藤接班<br>BE触发窗口：BE01~BE10</p>
+</div>
+<div style="flex:1;min-width:180px;background:#1a150d;border:1px solid #4a3a2a;border-radius:6px;padding:12px">
+<h4 style="color:#da8;font-size:13px">第二幕「迷局」D21-40</h4>
+<p style="font-size:11px;color:#aaa;line-height:1.6">真相浮现·信任与背叛<br>阶段三(D21-30)依赖<br>阶段四(D31-40)抉择<br>关键：雪代杀人自白·台风夜<br>BE触发窗口：BE11~BE19</p>
+</div>
+<div style="flex:1;min-width:180px;background:#0d1a2a;border:1px solid #305070;border-radius:6px;padding:12px">
+<h4 style="color:#8ac;font-size:13px">第三幕「终幕」D41-53</h4>
+<p style="font-size:11px;color:#aaa;line-height:1.6">晚宴倒计时·十二飞鸟集结<br>备战→站队→极乐之夜<br>关键：雪代0.5秒选择·黑羽行动<br>BE触发窗口：BE20~BE22<br>结局：END-A/B/C/D</p>
+</div>
+</div>
+
+<div style="text-align:center;padding:40px 0 20px;color:#555;font-size:11px">
+「十二飞鸟」剧本流程图 v3.0 · 2025大阪 · 65章 · Day 1→53 + 12结局分支
+</div>
+
+</div>
+</body>
+</html>
