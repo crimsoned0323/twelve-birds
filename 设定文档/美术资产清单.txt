@@ -244,9 +244,9 @@ SP_22  拉面店老板
         外貌: 50多岁男性，粗壮身材，手臂有褪色的浪花纹身。白围裙
         Prompt: "Visual novel character sprite, Japanese ramen shop owner, 50s, stocky build, faded wave tattoo on forearm, white apron, warm welcoming smile, full body, anime style, transparent background"
 
-SP_23  小澪_14岁
-        外貌: 14岁少女，穿着校服或休闲装，马尾辫，和母亲一样有蓝色眼睛。个子几乎和妈妈一样高
-        Prompt: "Visual novel character sprite, 14-year-old Japanese schoolgirl, ponytail, wearing school uniform, blue eyes like her mother, nearly as tall as adult, earnest expression, full body, anime style, transparent background"
+SP_23  小澪_16岁
+        外貌: 16岁少女，穿着高中校服或休闲装，马尾辫，和母亲一样有蓝色眼睛。个子几乎和妈妈一样高
+        Prompt: "Visual novel character sprite, 16-year-old Japanese high school girl, ponytail, wearing school uniform, blue eyes like her mother, nearly as tall as adult, earnest expression, full body, anime style, transparent background"
 
 SP_24  紫的乌鸦
         外貌: 黑色乌鸦，羽毛表面泛蓝光。蹲在笼子里或紫的肩上
@@ -279,9 +279,9 @@ CG_04  蝴蝶结
         Prompt: "Visual novel CG, young woman in lingerie running down dim corridor of club, glancing back over shoulder with tear-streaked face, clutching light blue underwear to chest, warm amber emergency lighting, desperate urgency, anime art style"
 
 CG_05  小澪的生日照
-        场景: Day 13。过塑的照片特写：小澪在餐桌前，巧克力蛋糕上插着数字蜡烛"14"，旁边放着写着"妈妈"的手写卡片
+        场景: Day 13。过塑的照片特写：小澪在餐桌前，巧克力蛋糕上插着数字蜡烛"16"，旁边放着写着"妈妈"的手写卡片
         出场角色: 小澪(照片中)，手写卡片
-        Prompt: "Visual novel CG, close-up of laminated photo showing 14-year-old girl at dining table with chocolate birthday cake, '14' candles, handwritten card reading 'Mama' visible, warm home lighting, sentimental, anime art style"
+        Prompt: "Visual novel CG, close-up of laminated photo showing 16-year-old girl at dining table with chocolate birthday cake, '16' candles, handwritten card reading 'Mama' visible, warm home lighting, sentimental, anime art style"
 
 CG_06  真正的账簿
         场景: Day 20。雪代办公室深夜。她翻开酒红色皮革账簿推给黑羽。台灯只照亮桌面。烟蒂在烟灰缸里
